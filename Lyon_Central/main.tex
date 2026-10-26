@@ -29,10 +29,22 @@
 % Extra Packages
 \usepackage{wrapfig}
 \usepackage{graphicx}
+\usepackage[
+    style=numeric-comp,
+    sorting=none,
+    giveninits=true,   % Changes "John Smith" to "J. Smith"
+    terseinits=true,   % Removes periods from initials ("J Smith")
+    url=false,         % Hide URLs if you have DOIs or page numbers
+    doi=false          % Hide DOIs to save another line
+]{biblatex}
+\addbibresource{refs.bib}
+\renewcommand*{\bibfont}{\footnotesize}
+\setlength{\bibitemsep}{0pt}
+
 \usepackage[colorlinks = true,
-            linkcolor = black,
-            urlcolor  = black,
-            citecolor = black,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
             anchorcolor = black]{hyperref}
 \usepackage{xurl}
 \urlstyle{same}
@@ -60,10 +72,11 @@
   \addtocounter{descenum}{-1}
 }
 \newcommand{\bt}[1]{{\textbf{\color{teal} #1}}}
-\newcommand{\boldheading}[1]{{\fontsize{13}{16}\selectfont\bfseries{#1}\vspace{6pt}}}
+\newcommand{\boldheading}[1]{\par\vspace{4pt}{\bfseries #1\par}\vspace{2pt}}
 \setlength{\emergencystretch}{3em}
 
 \newcommand{\update}[1]{{\color{red} #1}}
+\usepackage{float}
 
 \begin{document}
 
@@ -90,41 +103,68 @@ Professional address & Bâtiment Ada Lovelace, 615 Rue du Jardin-Botanique, 5460
 
 \gap[12pt]
 \htwo{1.2.}{Professional experience}
-\vspace{6pt}
+% \vspace{6pt}
 {\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.1}
 \begin{tabularx}{0.988\linewidth}{|L{40mm}|X|X|}
 \hline \rowcolor{lbl}\bfseries Year & \bfseries Position & \bfseries Institution\\
 \hline Oct 2025 - Current & Postdoc &  INRIA, Nancy\\
-\hline  Mar 20223 - Sep 2025 & Postdoc & LAAS-CNRS, Toulouse\\
-\hline  Jan 20223 - Feb 2023 & Research Engineer & LAAS-CNRS, Toulouse\\
-\hline  Jan 2019 - Dec 2022 & PhD Student & LAAS-CNRS, Toulouse\\
+\hline  Mar 2023 - Sep 2025 & Postdoc & LAAS-CNRS, Toulouse\\
+\hline  Jan 2023 - Feb 2023 & Research Engineer & LAAS-CNRS, Toulouse\\
 \hline  Jan 2019 - Dec 2022 & PhD Student & LAAS-CNRS, Toulouse\\
 \hline  Aug 2016 - Nov 2018 & Research Assistant & IIT-H, Hyderabad, India\\
-
 \hline
 \end{tabularx}\par}
 
-\gap[18pt]
+% \gap[18pt]
 \htwo{1.3.}{Scientific experience (maximum 10 lines)}
-The core of my research focuses on robot motion planning. Throughout my research career, I have worked on multiple aspects of motion planning, including path and trajectory planning, optimal trajectory generation, and high-level control. My research focuses on enabling robot autonomy through practical deployment grounded in a strong theoretical foundation. I began by building robots from scratch, then transitioned to motion planning for humanoid robots, and later to human-aware motion planning for mobile robots. My current work lies at the intersection of motion planning and human–robot interaction, with the aim of enabling robots to operate safely and effectively among humans. Below, I outline my research journey in chronological order.
-\htwo{1.4.}{Keywords (maximum 5)}
-\htwo{1.5.}{Major events in scientific career}
-\note{List up to 5 highlights from your scientific career.}
-\gap[40pt]
-\htwo{1.6.}{Grants and other academic activities}
-\note{Grants, funding, role as a board member, consulting, expert etc.}
+The core of my research is robot motion planning, covering path and trajectory planning, optimal trajectory generation, and high-level control, with a focus on enabling robot autonomy through practical deployment grounded in a strong theoretical foundation. I began by building robots from scratch (stair-climbing robots, a 3D-printed humanoid) at IIIT-Hyderabad, then worked on whole-body motion planning and reinforcement learning for humanoid robots during my Master's. During my PhD and postdoc at LAAS-CNRS, I moved to human-aware motion planning for mobile robots, developing the open-source human-aware navigation stack CoHAN, deployed on PR2, Pepper, TIAGo and other platforms, and used in the euROBIN European project. Since October 2025, I am a postdoc in the HUCEBOT team at INRIA Nancy, working on a new version of CoHAN, robot learning and VLMs, for human-aware navigation and HRI. My expertise lies at the intersection of motion planning and human-robot interaction, with the aim of enabling robots to operate safely and effectively among humans. I have authored 3 journal articles and over 20 conference papers (over 1,000 citations, h-index 13).
 
-\hspace*{9mm}{\fontsize{11}{13}\selectfont\bfseries 1.8 Outreach and popularising science\par}
-\vspace{8pt}
-\note{List the occasions/events that allowed you to disseminate your work to the general public.}
-\gap[40pt]
+\htwo{1.4.}{Keywords (maximum 5)}
+Human-aware motion planning; Social robot navigation; Human-robot interaction; Robot learning; AI for HRI.
+
+\htwo{1.5.}{Major events in scientific career}
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=1pt,parsep=0pt]
+    \item \textbf{2022 - 2026}: Became a recurring organiser of workshops on HRI and social robot navigation at the main robotics conferences, chairing the ICRA 2025 edition, helping to shape the research agenda of the community.
+    \item \textbf{2022 - 2026}: Multiple international collaborations on human-aware navigation, including a dual-site, cross-cultural user study with the University of Michigan (USA), leading to HRI 2026~\ref{hri26} and ICRA 2026~\ref{bi3dataset}; integration of task and motion planning with CNR-ISTC Rome (Italy)~\ref{icsr24}; a research visit to the University of Bremen (Germany) to integrate CoHAN into their Multiverse framework (euROBIN).
+    \item \textbf{2024 - 2025}: Authored two field-shaping publications in social robot navigation, a first-author survey and taxonomy in the \textit{International Journal of Robotics Research}~\ref{ijrr24} and, as co-author, the community-wide \textit{Principles and Guidelines for Evaluating Social Robot Navigation Algorithms} in \textit{ACM Transactions on Human-Robot Interaction}~\ref{principles}.
+    \item \textbf{2025}: Recognised as an expert in the field through appointment as Associate Editor of IEEE Robotics and Automation Letters (RA-L) and co-editor of a Frontiers in Robotics and AI research topic.
+    \item \textbf{2025}: Proposal accepted for Dagstuhl Seminar 27131 \textit{Computational Intelligence in Social and Human Aspects of Robot Navigation} (2027), as organiser.
+\end{itemize}
+
+\htwo{1.6.}{Grants and other academic activities}
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=1pt,parsep=0pt]
+    \item \textbf{Grants}: Microsoft Student Travel Grant, International Symposium on Robotics (ISR), Munich, 2018.
+    \item \textbf{Editorial}: Associate Editor, IEEE Robotics and Automation Letters (RA-L), Aug 2025 - Aug 2026; Co-editor of the Frontiers in Robotics and AI research topic \textit{Social Robot Navigation - Opportunities, Algorithms, Tools, and Systems} (Mar 2025 - Jul 2026).
+    \item \textbf{Organisation}: Organiser, Dagstuhl Seminar 27131 (2027); Organizing Chair, \textit{Advances in Social Navigation: Planning, HRI and Beyond} workshop at the IEEE International Conference on Robotics and Automation (ICRA 2025); Co-organiser of \textit{5th Workshop on Social Robot Navigation: From Humans, to Robots, and to the World} at the IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS 2026), \textit{Unsolved Problems in Social Robot Navigation} at Robotics: Science and Systems (RSS 2024), \textit{Social Robot Navigation: Advances and Evaluation} at IROS 2023, and \textit{Joint Action, Adaptation, and Entrainment in HRI} at the ACM/IEEE International Conference on Human-Robot Interaction (HRI 2022).
+    \item \textbf{Cascade funding}: Supervised 5 third-party projects from 4 countries, each funded with around €60k through the \href{https://www.eurobin-project.eu/index.php/about-us}{euROBIN open calls}, reviewed their milestone deliverables on which funding releases were based, and wrote the calls for two of them.
+    \begin{itemize}[label=--,leftmargin=*,topsep=0pt,itemsep=0pt,parsep=0pt]
+        \item At LAAS-CNRS, wrote and supervised the calls for \textit{HuNavSim2.0} (Universidad Pablo de Olavide, Spain), funded by the 2nd Open Call of the Technology Exchange Programme in 2024, and \textit{HARD-HAT} (Ingeniarius, Portugal), funded by the 1st Open Call for Collaborative Projects in 2025--2026, which resulted in~\ref{frontiers}.
+        \item At INRIA, supervised \textit{UMI-LINGO} (Eurecat, Spain) and \textit{VILMA} (CYENS, Cyprus), which use a UMI device to collect manipulation data, and \textit{SyntetiQ} (Syntetiq Ltd, UK), which developed a pipeline and collected manipulation data in NVIDIA Isaac Sim. All three were funded by the 3rd Open Call of the Technology Exchange Programme in 2025--2026.
+    \end{itemize}
+    \item \textbf{Reviewing}: \textit{Journals}: International Journal of Robotics Research (IJRR), IEEE RA-L, International Journal of Social Robotics (IJSR), IEEE Transactions on Robotics (T-RO), ACM Transactions on Human-Robot Interaction (THRI); \textit{Conferences}: ICRA, IROS, HRI, IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), International Conference on Social Robotics (ICSR), IEEE-RAS International Conference on Humanoid Robots (Humanoids), and Iberian Robotics Conference (ROBOT 2026, \href{https://robot2026.upc.edu/committee/}{Program Committee member}).
+    \item \textbf{Supervision}:
+    \begin{itemize}[label=--,leftmargin=*,topsep=0pt,itemsep=0pt,parsep=0pt]
+        \item Marcela Karam (summer intern, Jun - July 2026)
+        \item Hariharan Arunachalam (PhD student, LAAS-CNRS, day-to-day supervision as postdoc, supervisor: Dr. Rachid Alami, Aug 2024 - Sep 2025, resulting in~\ref{icsr26})
+        \item Maxime Nee (summer intern, Jul - Sep 2023)
+        \item Gerardo Pérez (exchange student, Jul - Sep 2023)
+        \item Matteo Matera (Master's thesis, co-supervised, Apr - Jul 2023)
+    \end{itemize}
+\end{itemize}
+
+\htwo{1.8.}{Outreach and popularising science}
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=1pt,parsep=0pt]
+    \item \textbf{European Parliament}: Presented a robot demonstration as a member of the INRIA team at the AI-powered Robotics event at the European Parliament, covered by the media (September 2026).
+    \item \textbf{MuMMER}: Contributed to the navigation system of the Pepper robot deployed as a guide at the Ideapark shopping mall (Tampere, Finland) within the MuMMER European project, interacting with the public~\ref{mummer}.
+    \item \textbf{Open source}: My navigation software (CoHAN) and simulation tools are on GitHub (\url{https://github.com/sphanit}) and Zenodo~\ref{cohan2zen}, \ref{cohannav2}, including an online virtual lab open to anyone through a web browser. The Bi$^3$ dataset~\ref{bi3dataset} is also publicly available (\url{https://fluentrobotics.com/bi3dataset/}).
+\end{itemize}
 \newpage
 \hone{2.}{Research activities}
 % \htwo{2.1.}{Description of scientific background, including main results (maximum 1 page)}
 \htwo{2.1.}{Description of scientific background}
-% \textbf{Bachelor's and Master's (2014 - 2018):} 
+\textbf{Bachelor's and Master's (2014 - 2018):} 
 During my bachelor's and master's at IIIT-Hyderabad, I have worked on several kinds of robotics projects. I joined the Robotics Research Center (RRC) as an honours student and worked on the development of a stair-climbing robot as my first project. 
-It involved using CAD tools like Solidworks to build and analyse the robot, quasi-static phase analysis and  prototyping the robot design~\ref{air15}, \ref{iros15}. Following this, I assisted in the development
+It involved using CAD tools like Solidworks to build and analyse the robot, quasi-static phase analysis and  prototyping the robot design~\ref{air15}, \ref{iros15}. Following this, I 
 \setlength{\columnsep}{5pt}
 \begin{wrapfigure}{r}{0.26\textwidth}
 \begin{minipage}{0.26\textwidth}
@@ -135,17 +175,17 @@ It involved using CAD tools like Solidworks to build and analyse the robot, quas
 \end{minipage}
 \begin{flushleft} 
 \footnotesize 
-\textit{Stair-climbing robot prototype and the 3D printed humanoid doing reachabil- ity task \ref{iros15}, \ref{robio}, \ref{humanoids18}.}
+\textit{Stair-climbing robot prototype and the 3D printed humanoid doing reachability task \ref{iros15}, \ref{robio}, \ref{humanoids18}.}
 \par
 \vspace{-\intextsep}
 \end{flushleft}
 \vspace{-\intextsep}
 \end{wrapfigure}
-of 3D printed humanoid robot~\ref{raha16} for building the required circuitry and system integration. In my master’s, I explored various aspects of humanoid whole-body motion planning and developed novel solutions to inverse kinematics. I proposed a reinforcement learning–based methodology for finding stable inverse kinematics configurations~\ref{robio}, which was later extended to dual-arm reachability tasks~\ref{isr18}. As part of this extension, I introduced a new reinforcement learning architecture, DiGrad~\ref{humanoids18}. Further, I completed a three-month exchange at IIT-Jodhpur under Prof. Suril Shah, where I mentored three bachelor’s students on project implementation. The project involved capturing human motion using a motion capture system and transferring these motions to a humanoid robot.
+assisted in the development of 3D printed humanoid robot~\ref{raha16} for building the required circuitry and system integration. In my master’s, I explored various aspects of humanoid whole-body motion planning and developed novel solutions to inverse kinematics. I proposed a reinforcement learning–based methodology for finding stable inverse kinematics configurations~\ref{robio}, which was later extended to dual-arm reachability tasks~\ref{isr18}. As part of this extension, I introduced a new reinforcement learning architecture, DiGrad~\ref{humanoids18}. Further, I completed a three-month exchange at IIT-Jodhpur under Prof. Suril Shah, where I mentored three bachelor’s students on project implementation. The project involved capturing human motion using a motion capture system and transferring these motions to a humanoid robot.
 
-% \textbf{PhD (2019 - 2022):} 
+\textbf{PhD (2019 - 2022):} 
 The main objective of my doctoral thesis was to develop human-aware robotic systems and provide open-source implementations. During my PhD at LAAS-CNRS, I extensively worked on a {human-aware robot navigation stack}~\ref{cohan1}, \ref{cohan2} in ROS and made the system publicly available on GitHub. 
-Over time, I iteratively extended
+Over time, I iteratively
 \setlength{\columnsep}{5pt}
 \begin{wrapfigure}{l}{0.28\textwidth}
 \begin{minipage}{0.28\textwidth}
@@ -161,11 +201,11 @@ Over time, I iteratively extended
 \par
 \vspace{-\intextsep}
 \end{flushleft}
-% \vspace{-\intextsep}
+\vspace{-6pt}
 \end{wrapfigure}
-the system with new features and implementations, including a multi-modal planning approach~\ref{cohan2}, a novel algorithm for detecting hidden humans~\ref{cohan3}, and new optimisation constraints that promote socially aware robot behaviour. The system was tested on multiple robotic platforms both at {LAAS} (PR2, Pepper and TIAGo)~\ref{cohan2}, \ref{cohan3} and at other laboratories (TIAGo, Hello Robot Stretch2, and a custom robot)~\ref{icsr24}. I also contributed to the development of intelligent human agents~\ref{inhus1}, \ref{inhus3}, \ref{imhus1} in simulation for evaluating the navigation system under diverse scenarios. As part of the {MuMMER European project}, I contributed to the development of the navigation system~\ref{mummer} for the Pepper robot during a long-term deployment at Ideapark in Tampere, Finland, and remotely supported project partners in conducting the associated long-term user study. I participated in an international social robot navigation symposium involving researchers from around the world, where we discussed key challenges and emerging research directions. This collaboration resulted in a joint article proposing {evaluation guidelines} for the field~\ref{principles}. 
+extended the system with new features and implementations, including a multi-modal planning approach~\ref{cohan2}, a novel algorithm for detecting hidden humans~\ref{cohan3}, and new optimisation constraints that promote socially aware robot behaviour. The system was tested on multiple robotic platforms both at {LAAS} (PR2, Pepper and TIAGo)~\ref{cohan2}, \ref{cohan3} and at other laboratories (TIAGo, Hello Robot Stretch2, and a custom robot)~\ref{icsr24}. I also contributed to the development of intelligent human agents~\ref{inhus1}, \ref{inhus3}, \ref{imhus1} in simulation for evaluating the navigation system under diverse scenarios. As part of the {MuMMER European project}, I contributed to the development of the navigation system~\ref{mummer} for the Pepper robot during a long-term deployment at Ideapark in Tampere, Finland, and remotely supported project partners in conducting the associated long-term user study. I participated in an international social robot navigation symposium involving researchers from around the world, where we discussed key challenges and emerging research directions. This collaboration resulted in a joint article proposing {evaluation guidelines} for the field~\ref{principles}. 
 
-\textbf{Research Enginner and Postdoc (2023 - Present)}: 
+\textbf{Research Engineer and Postdoc (2023 - Present)}: 
 After my PhD, I worked as an engineer for two months before beginning my postdoctoral position in March at LAAS-CNRS. During this time, I focused on formalising and refining 
 \setlength{\columnsep}{5pt}
 \begin{wrapfigure}{r}{0.24\textwidth}
@@ -178,55 +218,176 @@ After my PhD, I worked as an engineer for two months before beginning my postdoc
 \end{minipage}
 \begin{flushleft} 
 \footnotesize 
-\textit{Screenshot from the dataset~\ref{bi3dataset} of the user-study~\ref{hri26}.}
+\textit{Screenshot from the dataset of the user-study~\ref{hri26},~\ref{bi3dataset} .}
 \par
 \vspace{-\intextsep}
 \end{flushleft}
+% \vspace{-\intextsep}
+\end{wrapfigure}
+a set of novel evaluation metrics~\ref{new_metrics} I had proposed at the end of my thesis. These metrics provide a better way to quantify human-aware robot navigation under different circumstances, incorporating elements such as danger and human visibility. During my postdoc at LAAS, I engaged in several collaborations while developing a new version of my human-aware robot navigation stack. This updated system incorporated new technologies, such as behaviour trees, and was made more robust. In parallel, I worked on a survey with several researchers across Europe, which was later published as a journal article~\ref{ijrr24}. I initiated a collaboration with the University of Michigan, where we conducted a dual-site user study to investigate how different motion prediction mechanisms affect user perception~\ref{bi3dataset}, \ref{hri26}. Another collaboration was conducted with researchers from CNR - Institute of Cognitive Sciences and Technologies, Rome, where we proposed a combined task and motion planning framework~\ref{icsr24}, \ref{planrob} and tested it in a simulated hospital environment.
+
+As part of the euROBIN project, I collaborated with the University of Bremen and ISIR-Paris. With Bremen, we integrated my robot navigation stack into their virtual environment, which is publicly accessible \href{https://binder.intel4coro.de/v2/gh/sphanit/cohan_multiverse_virtual_labs/HEAD}{online}. With ISIR, I explored how combining LLMs and geometric reasoning can improve comfort and legibility in human-aware robot navigation. I moved to INRIA, Nancy, in October 2025, where I continue to work on euROBIN and contributed to INRIA's demo at the AI-powered Robotics event at the European Parliament (September 2026). I am currently exploring AI for human-robot interaction, alongside robot learning and human-aware navigation.
+
+
+\newpage
+\htwo{2.2.}{Scientific project for the junior professor chair (3 pages)}
+% {\itshape (Including scientific context, obstacles, indicators, dissemination of results)\par}
+% \gap[30pt]
+\boldheading{{Context and Research Axes}}
+\setlength{\columnsep}{6pt}
+\begin{wrapfigure}{r}{0.4\textwidth}
+\centering
+\vspace{-\intextsep}
+\includegraphics[width=0.38\textwidth]{plan.jpg}
+{\footnotesize\textit{Fig.~1: Target scenarios: a service robot in a crowded restaurant (left), a humanoid assisting an elderly person at home (right).}\par}
 \vspace{-\intextsep}
 \end{wrapfigure}
-a set of novel evaluation metrics~\ref{new_metrics} I had proposed at the end of my thesis. These metrics provide a better way to quantify human-aware robot navigation under different circumstances, incorporating elements such as danger and human visibility. During my postdoc at LAAS, I engaged in several collaborations while developing a new version of my human-aware robot navigation stack. This updated system incorporated new technologies, such as behaviour trees, and was made more robust. In parallel, I worked on a survey with several researchers across Europe, which was later published as a journal article~\ref{ijrr24}. I initiated a collaboration with the University of Michigan, where we conducted a dual-site user study to investigate how different motion prediction mechanisms affect user perception~\ref{bi3dataset}, \ref{hri26}. Another collaboration was conducted with researchers from CNR – Institute of Cognitive Sciences and Technologies, Rome, where we proposed a combined task and motion planning framework~\ref{icsr24}, \ref{planrob} and tested it in a simulated hospital environment.
 
-\update{As part of the euROBIN project, I collaborated with the University of Bremen and ISIR-Paris. With Bremen, we integrated my robot navigation stack into their virtual environment, which is publicly accessible \href{https://binder.intel4coro.de/v2/gh/sphanit/cohan_multiverse_virtual_labs/HEAD}{online}
-, and I also made a one-week research visit as part of this work. The collaboration with ISIR is ongoing, where we are exploring how combining LLMs and geometric reasoning can improve comfort and legibility in human-aware robot navigation. I moved to INRIA, Nancy, in October 2025, and I continue to work on the euROBIN project and socially aware robot navigation.}
+\noindent My long-term goal is to integrate robots into everyday life as co-workers and assistants (Fig.~1). This requires motion planning that remains robust to disturbances and failures not only in controlled settings but in uncontrolled, human-populated environments, where the robot must perceive and understand the situation, communicate, react appropriately, and know when to stop. Current human-aware navigation (HAN) planners fall into two camps~\cite{singamaneni2024survey}: learned planners (RL, imitation learning (IL)) capture complex behaviours but transfer poorly across robots and contexts, while model-based planners such as MPC transfer well but are context-blind and treat humans as obstacles with deterministic motion. My central hypothesis is that \textit{combining learned interaction and context models with stochastic model-based planning yields human-aware motion that is both adaptive and reliable}. Building on my open-source human-aware navigation stack CoHAN~\ref{cohan1}, \ref{cohan2}, already adopted by other groups~\cite{sorokoletova2024enhancing}, I will address two research axes:
 
-\htwo{2.2.}{Scientific project for the junior professor chair (maximum 3 pages) (\textit{Research statement})}
-{\itshape (Including scientific context, obstacles, indicators, dissemination of results)\par}
-\gap[30pt]
+\vspace{0.5ex}
+\noindent \textbf{\textit{Axis 1: Robust Human-Aware Motion Planning}}: How can a robot plan trajectories that remain safe, legible, and proactive under uncertainty in human motion, intention, and context, and transfer across platforms (wheeled robots, humanoids, quadrupeds)?
 
+\vspace{0.5ex}
+\noindent \textbf{\textit{Axis 2: Situation Assessment and Decision-Making in HRI}}: How should a robot assess an interaction situation, predict how humans will react to its actions, and select appropriate actions (e.g., move, wait, speak, hand over an object)?
+
+\vspace{0.5ex}
+\boldheading{{Methodology}}
+
+\noindent \textbf{{Robust and Adaptive Motion Planning (Axis 1)}}: RL and IL can learn controllers and behaviours that are hard to model mathematically, but usually need retraining on a new platform. Model Predictive Control (MPC)~\cite{kouvaritakis2016model} is flexible and transferable but requires precise modelling and tuning. My co-planning MPC framework~\ref{cohan1} already plans joint human-robot trajectories with \textit{social constraints}, but assumes deterministic human motion. I will extend it to stochastic MPC (S-MPC)~\cite{heirung2018stochastic, zhu2025fusion}, where \textit{chance constraints}~\cite{paulson2020stochastic} encode human-interaction uncertainty as soft constraints and \textit{robust constraints} enforce kinematic feasibility and obstacle avoidance. RL will be used to learn the behaviours and cost terms that are hard to hand-design~\cite{jia2025architectures}, leaving safety to the S-MPC layer. Vision-language-action models (VLAs)~\cite{kawaharazuka2025vision} can interpret scenes and language to propose candidate actions, but in my experience generative models alone do not produce reliable trajectories without strong feedback. I will therefore use VLA outputs as guidance for the S-MPC, which ensures safety, responsiveness, and adherence to interaction constraints. Finally, to adapt to context, a learned context model (Axis 2) will update the constraints and objective of the S-MPC online, so that the same planner exhibits different behaviours in, e.g., a hospital corridor or a crowded restaurant.
+
+\vspace{0.5ex}
+\noindent \textbf{{Learning Interaction Models and Decision-Making (Axis 2)}}: Recent HRI datasets such as \href{https://github.com/RobotiXX/MuSoHu-data-collection}{MuSoHu}, \href{https://spalaboratory.github.io/SiT/}{SiT}, \href{https://www.cs.utexas.edu/~xiao/SCAND/SCAND.html}{SCAND}, \href{http://thor.oru.se/magni.html}{THÖR-Magni} and \href{https://jrdb.erc.monash.edu/dataset/social}{JRDB-Social}, including my own Bi$^3$ dataset~\ref{bi3dataset}, each cover few contexts and human densities, and carry collection biases (e.g., visible teleoperator vs autonomous robot). I will first address data harmonisation~\cite{loulaki2024addressing}: identifying common interaction features and combining datasets while accounting for their biases. On this data, I will learn a probabilistic action-reaction model that predicts how humans react (e.g., moving aside, waiting) to the robot's actions, using scene graphs~\cite{chang2021comprehensive} and graph neural networks (GNNs)~\cite{li2022dynamic} with attention~\cite{vaswani2017attention} to focus on relevant agents, and mixture density networks~\cite{errica2021graph} to output distributions that feed directly into the S-MPC chance constraints. For context recognition, I will fine-tune vision-language models (VLMs)~\cite{zhang2024vision} using LoRA~\cite{hu2022lora, luo2025towards} to classify the context and extract viable actions from the same scene graphs, and will move to dedicated architectures if this does not scale. In the mid-term, I will couple these predictions with decision-making under uncertainty (MDPs, POMDPs, RL)~\cite{rizk2018decision} and task planning~\cite{amiri2020learning}, extending my work on integrated task and motion planning~\ref{icsr24}, \ref{planrob} towards real-time, proactive decision-making for collaborative robots.
+
+\vspace{0.5ex}
+\noindent \textbf{{HRI Studies and Evaluation (Axes 1 and 2)}}: Both axes rely on understanding interaction. I will study how robots should communicate intent: when non-verbal cues such as motion legibility~\cite{schmidt2024investigating} suffice, and when verbal communication or negotiation is needed. LLMs can generate engaging speech~\cite{song2025goat} and multimodal LLMs can generate gestures~\cite{soton506590}, but their outputs are inconsistent across similar situations, so I will study how to constrain them for consistency and legibility. A series of user studies (following EU ethics guidelines) will identify the key features of interaction, whether agents' long-term intentions are needed or local observations suffice, and which constraints are common across contexts versus context-specific; these directly define the S-MPC constraints. In later years, I will extend this to physical HRI for whole-body human-aware motion planning. In parallel, I will continue my community work on evaluating HAN~\ref{principles}, \ref{new_metrics} by developing metrics, protocols, and benchmarks, notably through the \href{https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/27131}{Dagstuhl Seminar} I co-organise.
+
+\boldheading{{Work Plan and Risks}}
+\vspace{1ex}
+\noindent \textbf{{Timeline and Indicators}}\\[4pt]
+{\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.15}
+\begin{tabularx}{\linewidth}{|L{14mm}|Y|Y|}
+\hline \rowcolor{lbl}\bfseries Period & \bfseries Research objectives & \bfseries Indicators\\
+\hline Year 1-2 & Data harmonisation; probabilistic interaction model; S-MPC extension of CoHAN; first intent-communication user studies; context recognition with VLMs. & Harmonised benchmark released; open-source S-MPC planner; 1 PhD student recruited; ANR JCJC submitted; papers at HRI/ICRA/IROS/R-AL.\\
+\hline Years 3-4 & Context-adaptive HAN deployed on multiple platforms; RL/VLA guidance of S-MPC; multi-context user study; integration with task planning. & Cross-platform demos; multi-site user study; 2nd PhD student; ERC Starting Grant / Horizon proposal; journal articles (IJRR, T-RO, THRI).\\
+\hline Year 5+ & Stochastic whole-body human-aware planning; physical HRI; collaborative decision-making. & Whole-body demonstrator; long-term deployment; established research line within the team.\\
+\hline
+\end{tabularx}\par}
+
+\vspace{1ex}
+\noindent \textbf{{Obstacles and Mitigation}}: (i) \textit{Heterogeneous or insufficient data}: if harmonised public datasets are insufficient, I will collect targeted data on the team's platforms, building on my experience with the Bi$^3$ dual-site study~\ref{bi3dataset}. (ii) \textit{Unreliable generative models}: VLA/VLM outputs are only used as guidance; the S-MPC layer always enforces safety, so the system degrades gracefully to a classical planner. (iii) \textit{Sim-to-real and cross-platform transfer}: the model-based S-MPC layer reduces transfer to model identification, and every component is validated on real robots early through my open-source stack. (iv) \textit{Ethics and recruitment for user studies}: studies will follow institutional ethics review, and I will use simulation tools for human agents~\ref{inhus1}, \ref{imhus1} for early iterations.
+
+\boldheading{{Dissemination and Impact}}
+\vspace{0.5ex}
+% \noindent \textbf{{Dissemination and Impact}}: 
+Results will be published at the main robotics and HRI venues (HRI, ICRA, IROS, RO-MAN) and journals (IJRR, T-RO, RA-L, THRI), and all software, models and harmonised datasets will be released open source, continuing the CoHAN tradition. I will disseminate to the broader community through workshops, the Dagstuhl seminar, and outreach events. Applications include delivery, warehouse and service robots in airports, hospitals and elderly-care homes, as well as collaborative industrial robots and exoskeletons, where safe, coordinated motion is critical. The project aligns with the \href{https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf}{EU Horizon 2026--2027 programme} and the \href{https://eu-robotics.net/wp-content/uploads/euRobotics-A-Unified-Vision-for-European-Robotics-Dec2024-web.pdf}{Unified Vision for European Robotics}, which identify human-centred, socially aware autonomy as a key priority, a view echoed by the \href{https://hichristensen.com/pdf/roadmap-2024.pdf}{U.S. Robotics Roadmap} and recent \href{https://www.jst.go.jp/crds/en/publications/CRDS-FY2025-SP-01.html}{Japanese strategic reports}.
+
+\boldheading{{Integration in the Host Team}} \update{[To be completed: host team, its members and expertise, how the project complements it, available robotic platforms and collaborations within the institution.]}
+
+\boldheading{References}
+{
+\printbibliography[heading=none]
+}
+
+\newpage
 \hone{3.}{Teaching activities (maximum 2 pages)}
 \htwo{3.1.}{Teaching experience in higher education}
+I took up teaching as a part of my Bachelors and Masters in India as well as some time part of my PhD in France. I have tried to put together everything here. The tables list the overview of my teaching activities and the description of courses. All the teaching activities were carried out in English in both countries. \\
+
+\boldheading{Activities in France}
+
+In France, I majorly taught some lab courses and a little bit of tutorials. The courses are done with the Electronics and Computer Science Engineering (GEI) department at INSA, Toulouse.
+% \vspace{-1.5ex}
+
+\begin{table}[H]
+\centering
+\fontsize{10}{12}\selectfont
+\setlength{\tabcolsep}{3pt} % Tightens horizontal padding
+\begin{tabularx}{\linewidth}{|l|c|l|c|c|X|c|c|}
+\hline
+\textbf{Status} & \textbf{Year} & \textbf{Establishment} & \textbf{Public} & \textbf{Level} & \textbf{Subject} & \textbf{Volume (in hours)} & \textbf{Nature} \\ \hline
+Vacataire & 2022 & INSA, Toulouse & Licence & M1 & Real-time Systems / Robot Control & 11 & TP \\ \hline
+DCE & 2022 & INSA, Toulouse & Licence & M1 & Real-time Systems / Robot Control & 11 & TP \\ \hline
+DCE & 2021 & INSA, Toulouse & Licence & L2 & Computer Logic and Hardware & 7.33 & TP \\ \hline
+DCE & 2021 & INSA, Toulouse & Licence & L2 & Computer Logic and Hardware & 5 & TD \\ \hline
+\multicolumn{6}{|r|}{\textbf{Total}} & \multicolumn{2}{l|}{\textbf{34.33 heures}} \\ \hline
+\end{tabularx}
+\end{table}
+% \vspace{-3.5ex}
+
+
+The TP sessions in Real-time systems consisted of monitoring and mentoring 20-30 students organised as groups of 2, while they were working on their project. It followed the evaluation based on their performances and a small viva of what they learnt during this project. For the Computer Logic and Hardware course, there were around 14 students for TD and 30 students for TP, where the students worked on their assignments under my supervision.
+
+Recently, I also gave a 1 hour lecture at the \href{https://aihumanrobot.sciencesconf.org/resource/page/id/1}{AIxHRI Summer School}, about human-aware robot navigation to master’s and PhD students (around 50 students).\\
+
+
+\boldheading{Activities in India}
+
+In India, I have done extensive teaching including taking few classes, conducting tutorials and labs, setting exam papers for some lab courses and finally evaluating exams and assigning grades. I was a teaching assistant for six semesters and typically the duties require an average of 5 hours per week. These 5 hours include teaching, office hours for clearing doubts, paper corrections and meetings. Each tutorial (TD) is typically 1.5 hours long and a labs is 3 hours long with an average of 10 labs per semester. I have approximately calculated these hours and tabulated them below as well provided the description of the courses.
+
+% \vspace{-1.5ex}
+\begin{table}[H]
+\centering
+\fontsize{10}{12}\selectfont
+\setlength{\tabcolsep}{3pt} % Tightens cell padding
+\renewcommand{\arraystretch}{0.95} % Slightly tighter row height
+\begin{tabularx}{\linewidth}{|l|c|l|c|c|X|c|c|}
+\hline
+\textbf{Status} & \textbf{Year} & \textbf{Establishment} & \textbf{Public} & \textbf{Level} & \textbf{Subject} & \textbf{Volume (in hours)} & \textbf{Nature} \\ \hline
+Teaching Assistant & 2017 & IIIT-Hyderabad & Licence & L1 & Digital Logic and Processors & $\sim$ 57 & TD+TP \\ \hline
+Teaching Assistant & 2017 & IIIT-Hyderabad & Licence + Masters & L3--M2 & Introduction to robotics & $\sim$ 21 & TD \\ \hline
+Teaching Assistant & 2016 & IIIT-Hyderabad & Licence & L1 & Digital Logic and Processors & $\sim$ 57 & TD+TP \\ \hline
+Teaching Assistant & 2016 & IIIT-Hyderabad & Licence & L2 & Communication Theory - 1 & $\sim$ 21 & TD \\ \hline
+Teaching Assistant & 2015 & IIIT-Hyderabad & Licence & L1 & Digital Logic and Processors & $\sim$ 36 & TP \\ \hline
+Teaching Assistant & 2014 & IIIT-Hyderabad & Licence & L2 & Embedded Hardware Design & $\sim$ 57 & TD+TP \\ \hline
+\multicolumn{6}{|r|}{\textbf{Total}} & \multicolumn{2}{l|}{\textbf{$\sim$ 249 heures}} \\ \hline
+\end{tabularx}
+% \caption{List of teaching activities in India}
+\end{table}
+
+I have taught classes of varying sizes during my time in IIIT-Hyderabad. For the Digital Logic and Processors course, I was monitoring around 20 students in TP and over 50 students in TD. Over the time, I was appointed as the head TA for this course twice and there I was handling around 200 students in both TP and TD, while making sure all the TAs conduct their tutorials and labs well. For the Embedded Hardware Design and Communication Theory-1, I was teaching around 50-60 students sharing the responsibilities with another TA. For the Intro to Robotics course, the strength of the class was around 20. In this course, I have taken a couple of full lectures along with my weekly tutorials.
+
 \gap[10pt]
-\htwo{3.2.}{Pedagogical project related to the junior professorship within the host institution (maximum 2 pages) (\textit{Teaching statement})}
+\htwo{3.2.}{Teaching Project}
+As I am actively involved in motion planning and control of autonomous social robotics, with the background of electronics, I plan to do teaching activities around  digital logic, embedded systems, robotics and motion planning, control, probabilistic robotics and localization, programming, decision-making and learning, and human-robot interaction. With growing usage of AI tools by students, my policy would be, to not completely restrict them from using them but to use them to understand or accelerate the work. For instance, I would limit their usage for first- and second-year students, while allowing more flexibility from third-year and Master’s students. I believe it is essential for students to first develop a strong foundation in coding and algorithm design independently before relying on AI to enhance their work.
+
+At the level of Bachelors, I can teach digital logic, processor architectures, embedded systems and IoT (Arduino, AVR, Micro-controllers, communication protocols, etc.), hardware design, programming languages (C/C++/Python/Matlab) and data structures, signal processing and probability, introduction to robotics, etc. My teaching style would be a combination of slides with physical class room teaching and I am flexible to conduct online lectures if required. The course structure at the bachelors level would be lectures, assignments and a small project focused on the current state-of-the-art or applications. Depending on the course, I also plan to have labs involved in the courses I teach, which can either be used for the course project or dedicated experiments to get hands-on experience on the concepts taught in class. 
+
+At the masters level, I will be focusing more on advanced topics like optimal motion planning and control, imitation and reinforcement learning, human-robot interaction, and evolving technologies for social robotics, AI and autonomous vehicles. I plan to make these courses more engaging by combining the teaching with in-class discussions on the current research papers. As social robotics is more practical, most courses will have projects as a part of course or the entire course could be a project on developing some methodologies. For the discussion sessions, students will be grouped and given papers that they need to read and understand before coming to the class. This works at the masters level as students are more autonomous.
+
+My overall teaching activities aim to look at the real-world problems on social robotics and automation with focus on hands-on experience needed to build expert skills, critical thinking and deeper understanding of the concepts. I am flexible, adaptable, and always approachable when students need extra support or clarification in class.
+
 \gap[20pt]
 
 \hone{4.}{Exhaustive list of contracts and funding obtained in research activities (if applicable)}
-{\fontsize{9}{10.5}\selectfont\renewcommand{\arraystretch}{1.15}
-\begin{tabularx}{0.988\linewidth}{|Y|Y|Y|Y|Y|Y|}
-\hline \bfseries Year & \bfseries Source (funding body) & \bfseries Project title &
-\bfseries Coordinators name & \bfseries Budget (€) & \bfseries Your role in the project\\
-\hline \rule{0pt}{8mm} & & & & & \\
-\hline \rule{0pt}{8mm} & & & & & \\
-\hline \rule{0pt}{8mm} & & & & & \\
-\hline
-\end{tabularx}\par}
+% {\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.15}
+% \begin{tabularx}{0.988\linewidth}{|Y|Y|Y|Y|Y|Y|}
+% \hline \bfseries Year & \bfseries Source (funding body) & \bfseries Project title &
+% \bfseries Coordinators name & \bfseries Budget (€) & \bfseries Your role in the project\\
+% \hline \rule{0pt}{8mm} & & & & & \\
+% \hline
+% \end{tabularx}\par}
+Not applicable.
+
 
 \hone{5.}{Comprehensive list of publications, books, patents, talks, poster presentations}
 \htwo{5.1.}{Summary}
 {\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.9}
 \begin{tabularx}{\linewidth}{|L{78mm}|X|}
-\hline Number of peer-reviewed articles & \\
-\hline \renewcommand{\arraystretch}{1}\begin{tabular}[c]{@{}l@{}}Number of other publications (proceedings,\\ conference proceedings, book chapters, etc.)\end{tabular} & \\
-\hline Number of patents & \\
-\hline Number of oral communications & \\
-\hline Number of poster communications & \\
-\hline Number of invited seminars & \\
+\hline Number of peer-reviewed articles & 3 \\
+\hline \renewcommand{\arraystretch}{1}\begin{tabular}[c]{@{}l@{}}Number of other publications (proceedings,\\ conference proceedings, book chapters, etc.)\end{tabular} & 29 \\
+\hline Number of patents & 0 \\
+\hline Number of oral communications & 9 \\
+\hline Number of poster communications & 3 \\
+\hline Number of invited seminars & 3\\
 \hline
 \end{tabularx}\par}
 
 \gap[12pt]
 \htwo{5.2.}{Peer-reviewed articles}
-\begin{descenumerate}{J}{2}
-    \descitem \label{principles} Anthony Francis and Claudia Pérez-D'Arpino and Chengshu Li and Fei Xia and Alexandre Alahi and Rachid Alami and Aniket Bera and Abhijat Biswas and Joydeep Biswas and Rohan Chandra and Hao-Tien Lewis Chiang and Michael Everett and Sehoon Ha and Justin Hart and Jonathan P. How and Haresh Karnan and Tsang-Wei Edward Lee and Luis J. Manso and Reuth Mirksy and Sören Pirk and \textbf{Phani Teja Singamaneni} and Peter Stone and Ada V. Taylor and Peter Trautman and Nathan Tsoi and Marynel Vázquez and Xuesu Xiao and Peng Xu and Naoki Yokoyama and Alexander Toshev and Roberto Martín-Martín. ``\textit{Principles and Guidelines for Evaluating Social Robot Navigation Algorithms}'', {ACM Transactions on Human-Robot Interaction}, 14, 2, Article 34 (June 2025), 65 pages. \url{https://doi.org/10.1145/3700599}.
+\begin{descenumerate}{J}{3}
+    \descitem \label{frontiers} Carlos A. P. Pizzino, \textbf{Phani Teja Singamaneni}, Micael S. Couceiro, Rachid Alami. ``\textit{A Multimodal Dataset for Socially Aware Navigation of Heavy-Duty Construction Robots}'', Frontiers in Robotics and AI, 2026. \url{https://doi.org/10.3389/frobt.2026.1873168}.
+    \descitem \label{principles} Anthony Francis and Claudia Pérez-D'Arpino and Chengshu Li and Fei Xia and Alexandre Alahi and Rachid Alami and Aniket Bera and Abhijat Biswas and Joydeep Biswas and Rohan Chandra and Hao-Tien Lewis Chiang and Michael Everett and Sehoon Ha and Justin Hart and Jonathan P. How and Haresh Karnan and Tsang-Wei Edward Lee and Luis J. Manso and Reuth Mirsky and Sören Pirk and \textbf{Phani Teja Singamaneni} and Peter Stone and Ada V. Taylor and Peter Trautman and Nathan Tsoi and Marynel Vázquez and Xuesu Xiao and Peng Xu and Naoki Yokoyama and Alexander Toshev and Roberto Martín-Martín. ``\textit{Principles and Guidelines for Evaluating Social Robot Navigation Algorithms}'', {ACM Transactions on Human-Robot Interaction}, 14, 2, Article 34 (June 2025), 65 pages. \url{https://doi.org/10.1145/3700599}.
     \descitem \label{ijrr24} \textbf{Phani Teja Singamaneni}, Pilar Bachiller-Burgos, Luis J. Manso, Anaís Garrell, Alberto Sanfeliu, Anne Spalanzani, Rachid Alami. ``\textit{A Survey on Socially Aware Robot Navigation: Taxonomy and Future Challenges}'', {The International Journal of Robotics Research}, 2024; 43(10), pp.1533-1572. \url{https://doi.org/10.1177/02783649241230562}.
 \end{descenumerate}
 
@@ -234,78 +395,113 @@ a set of novel evaluation metrics~\ref{new_metrics} I had proposed at the end of
 
 \boldheading{Conferences}
 
-\begin{descenumerate}{C}{21}
-    \descitem \label{hri26} Andrew Stratton , \textbf{Phani Teja Singamaneni}, Pranav Goyal, Rachid Alami, Christoforos Mavrogiannis. ``\textit{How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces}'', \bt{ACM/IEEE International Conference on Human-Robot Interaction (HRI)}, 2026. (Accepted)
+\begin{descenumerate}{C}{22}
+    \descitem \label{icsr26} Hariharan Arunachalam, \textbf{Phani Teja Singamaneni}, Rachid Alami. ``\textit{Validating Virtual Reality for Studying Multimodal Human-Robot Interaction in Socially Aware Robot Navigation}'', International Conference on Social Robotics (ICSR), 2026.
+
+    \descitem \label{hri26} Andrew Stratton, \textbf{Phani Teja Singamaneni}, Pranav Goyal, Rachid Alami, Christoforos Mavrogiannis. ``\textit{How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces}'', \bt{ACM/IEEE International Conference on Human-Robot Interaction (HRI)}, 2026, \url{https://doi.org/10.1145/3757279.3788664}.
     
-    \descitem \label{bi3dataset}  Andrew Stratton , \textbf{Phani Teja Singamaneni}, Pranav Goyal, Rachid Alami, Christoforos Mavrogiannis. ``\textit{Bi$^3$: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation}'', \bt{International Conference on Robotics and Automation (ICRA)}, 2026. (Accepted)
-    \descitem \label{rrc-irca26} Antareep Singha, Laksh Nanwani, Mathai Mathew, Samkit Jain,\textbf{ Phani Teja Singamaneni}, Arun Kumar Singh, K. Madhava Krishna. ``\textit{Crowd-FM: Learned Optimal Selection of Conditional Flow Matching-generated Trajectories for Crowd Navigation}'', \bt{International Conference on Robotics and Automation (ICRA)}, 2026. (Accepted)
+    \descitem \label{bi3dataset}  Andrew Stratton, \textbf{Phani Teja Singamaneni}, Pranav Goyal, Rachid Alami, Christoforos Mavrogiannis. ``\textit{Bi$^3$: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation}'', \bt{International Conference on Robotics and Automation (ICRA)}, 2026, \url{https://doi.org/10.1109/ICRA57385.2026.11695969}.
+    \descitem \label{rrc-irca26} Antareep Singha, Laksh Nanwani, Mathai Mathew, Samkit Jain, \textbf{Phani Teja Singamaneni}, Arun Kumar Singh, K. Madhava Krishna. ``\textit{Crowd-FM: Learned Optimal Selection of Conditional Flow Matching-generated Trajectories for Crowd Navigation}'', \bt{International Conference on Robotics and Automation (ICRA)}, 2026, \url{https://doi.org/10.1109/ICRA57385.2026.11696381}.
 
     \descitem \label{icsr24} {\textbf{Phani Teja Singamaneni}, Marcello Tascioni, Alessandro Umbrico, Andrea Orlandini, and Rachid Alami. ``\textit{Contextual Social Navigation through Integrated Task and Motion Planning}'', International Conference on Social Robotics, ICSR + AI 2024. vol 15563, pp 404–416. \url{https://doi.org/10.1007/978-981-96-3525-2_34}.}
 
-    \descitem \label{mummer} {Amandine Mayima, Guillaume Sarthou, Guilhem Buisan, \textbf{Phani Teja Singamaneni}, Yoan Sallami, Jules Waldhart, Kathleen Belhassein, Aurélie Clodic, Rachid Alami. ``\textit{How to make a robot guide?}", International Symposium on Experimental Robotics, ISER 2023. Springer Proceedings in Advanced Robotics, vol 30, pp. 483–494. \url{https://doi.org/10.1007/978-3-031-63596-0_43}.}
+    \descitem \label{mummer} {Amandine Mayima, Guillaume Sarthou, Guilhem Buisan, \textbf{Phani Teja Singamaneni}, Yoan Sallami, Jules Waldhart, Kathleen Belhassein, Aurélie Clodic, Rachid Alami. ``\textit{How to make a robot guide?}'', International Symposium on Experimental Robotics, ISER 2023. Springer Proceedings in Advanced Robotics, vol 30, pp. 483–494. \url{https://doi.org/10.1007/978-3-031-63596-0_43}.}
 
-    \descitem \label{inhus3} {Anthony Favier, \textbf{Phani Teja Singamaneni}, Rachid Alami, ``\textit{Challenging Human-Aware Robot Navigation with an Intelligent Human Simulation System}", Social Simulation Conference, ESSA 2023. Springer Proceedings in Complexity, pp 505–518. \url{https://doi.org/10.1007/978-3-031-57785-7_39}.}
+    \descitem \label{inhus3} {Anthony Favier, \textbf{Phani Teja Singamaneni}, Rachid Alami, ``\textit{Challenging Human-Aware Robot Navigation with an Intelligent Human Simulation System}'', Social Simulation Conference, ESSA 2023. Springer Proceedings in Complexity, pp 505–518. \url{https://doi.org/10.1007/978-3-031-57785-7_39}.}
 
-    \descitem \label{new_metrics} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics}'', \bt{IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)}, 2023, pp. 914-921. doi:\url{10.1109/RO-MAN57019.2023.10309398}.}
+    \descitem \label{new_metrics} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics}'', \bt{IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)}, 2023, pp. 914-921. \url{https://doi.org/10.1109/RO-MAN57019.2023.10309398}.}
     
     \descitem \label{imhus1} {Olivier Hauterville, Camino Fernández, \textbf{Phani Teja Singamaneni}, Anthony Favier, Vicente Matellán, and Rachid Alami. ``\textit{Interactive Social Agents Simulation Tool for Designing Choreographies for Human-Robot-Interaction Research}'', ROBOT2022: Fifth Iberian Robotics Conference: Advances in Robotics, ROBOT 2022. Lecture Notes in Networks and Systems, vol 590, pp. 514–527. \url{https://doi.org/10.1007/978-3-031-21062-4_42}.}
 
-    \descitem\label{inhus1} {Anthony Favier, \textbf{Phani Teja Singamaneni}, and Rachid Alami. ``\textit{An Intelligent Human Avatar to Debug and Challenge Human-aware Robot Navigation Systems}'', \bt{ACM/IEEE International Conference on Human-Robot Interaction (HRI)}, 2022, pp. 760-764, doi: 10.1109/HRI53351.2022.9889651.}
+    \descitem\label{inhus1} {Anthony Favier, \textbf{Phani Teja Singamaneni}, and Rachid Alami. ``\textit{An Intelligent Human Avatar to Debug and Challenge Human-aware Robot Navigation Systems}'', \bt{ACM/IEEE International Conference on Human-Robot Interaction (HRI)}, 2022, pp. 760-764, \url{https://doi.org/10.1109/HRI53351.2022.9889651}.}
         
-    \descitem \label{cohan3} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Watch out! There may be a Human. Addressing Invisible Humans in Social Navigation}'', \bt{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2022, pp. 11344-11351, doi: \url{10.1109/IROS47612.2022.9982186}.}
+    \descitem \label{cohan3} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Watch out! There may be a Human. Addressing Invisible Humans in Social Navigation}'', \bt{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2022, pp. 11344-11351, \url{https://doi.org/10.1109/IROS47612.2022.9982186}.}
     
-    \descitem {Jérôme Truc, \textbf{Phani Teja Singamaneni}, Daniel Sidobre, Serena Ivaldi, and Rachid Alami. ``\textit{Khaos: a kinematic human aware optimization-based system for reactive planning of flying-coworker}'', \bt{International Conference on Robotics and Automation (ICRA)}, 2022, pp. 4764-4770, doi: \url{10.1109/ICRA46639.2022.9811803}.}
+    \descitem {Jérôme Truc, \textbf{Phani Teja Singamaneni}, Daniel Sidobre, Serena Ivaldi, and Rachid Alami. ``\textit{Khaos: a kinematic human aware optimization-based system for reactive planning of flying-coworker}'', \bt{International Conference on Robotics and Automation (ICRA)}, 2022, pp. 4764-4770, \url{https://doi.org/10.1109/ICRA46639.2022.9811803}.}
     
-    \descitem \label{cohan2} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Human-Aware Navigation Planner for Diverse Human-Robot Interaction Contexts}'', \bt{EEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2021, pp. 5817-5824, doi: \url{10.1109/IROS51168.2021.9636613}.}
+    \descitem \label{cohan2} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Human-Aware Navigation Planner for Diverse Human-Robot Interaction Contexts}'', \bt{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2021, pp. 5817-5824, \url{https://doi.org/10.1109/IROS51168.2021.9636613}.}
 
-    \descitem \label{cohan1} {\textbf{Phani Teja S} and Rachid Alami. ``\textit{Hateb-2: Reactive planning and decision making in human-robot co-navigation}'', \bt{IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)}, 2020, pp. 179-186, doi: \url{10.1109/RO-MAN47096.2020.9223463}.}
+    \descitem \label{cohan1} {\textbf{Phani Teja S} and Rachid Alami. ``\textit{Hateb-2: Reactive planning and decision making in human-robot co-navigation}'', \bt{IEEE International Conference on Robot and Human Interactive Communication (RO-MAN)}, 2020, pp. 179-186, \url{https://doi.org/10.1109/RO-MAN47096.2020.9223463}.}
 
-    \descitem \label{iv19} {Raghu Ram Theerthala, AVS Sai Bhargav Kumar, Mithun Babu, \textbf{S Phaniteja}, and K. Madhava Krishna. ``\textit{Motion planning framework for autonomous vehicles: A time scaled collision cone interleaved model predictive control approach}'', IEEE Intelligent Vehicles Symposium (IV), 2019, pp. 1075-1080, doi: \url{10.1109/IVS.2019.8813823}.}
+    \descitem \label{iv19} {Raghu Ram Theerthala, AVS Sai Bhargav Kumar, Mithun Babu, \textbf{S Phaniteja}, and K. Madhava Krishna. ``\textit{Motion planning framework for autonomous vehicles: A time scaled collision cone interleaved model predictive control approach}'', IEEE Intelligent Vehicles Symposium (IV), 2019, pp. 1075-1080, \url{https://doi.org/10.1109/IVS.2019.8813823}.}
 
     \descitem \label{meha19} {Meha Kaushik, Nirvan Singhania, \textbf{Phaniteja S} and K. Madhava Krishna. ``\textit{Parameter sharing reinforcement learning architecture for multi agent driving}'', In Proceedings of the 2019 4th International Conference on Advances in Robotics (AIR '19). Article 31, pp. 1–7. \url{https://doi.org/10.1145/3352593.3352625}.}
 
-    \descitem \label{isr18} {\textbf{Phaniteja Singamaneni}, Parijat Dewangan, Abhishek Sarkar, and Madhava K. Krishna.``\textit{Learning Multi-Goal Inverse Kinematics in Humanoid Robot}'', ISR 2018; 50th International Symposium on Robotics, Munich, Germany, 2018, pp. 1-6.}
+    \descitem \label{isr18} {\textbf{Phaniteja Singamaneni}, Parijat Dewangan, Abhishek Sarkar, and Madhava K. Krishna. ``\textit{Learning Multi-Goal Inverse Kinematics in Humanoid Robot}'', ISR 2018; 50th International Symposium on Robotics, Munich, Germany, 2018, pp. 1-6.}
 
-    \descitem \label{humanoids18} {\textbf{S Phaniteja}, Parijat Dewangan, Pooja Guhan, K. Madhava Krishna, and Abhishek Sarkar. ``\textit{Learning dual arm coordinated reachability tasks in a humanoid robot with articulated torso}'', \bt{IEEE-RAS 18th International Conference on Humanoid Robots (Humanoids)}, 2018, pp. 1-9, doi: \url{10.1109/HUMANOIDS.2018.8624979}.}
+    \descitem \label{humanoids18} {\textbf{S Phaniteja}, Parijat Dewangan, Pooja Guhan, K. Madhava Krishna, and Abhishek Sarkar. ``\textit{Learning dual arm coordinated reachability tasks in a humanoid robot with articulated torso}'', \bt{IEEE-RAS 18th International Conference on Humanoid Robots (Humanoids)}, 2018, pp. 1-9, \url{https://doi.org/10.1109/HUMANOIDS.2018.8624979}.}
 
-    \descitem \label{robio} {\textbf{S Phaniteja}, Parijat Dewangan, Pooja Guhan, Abhishek Sarkar, and K. Madhava Krishna. ``\textit{A deep reinforcement learning approach for dynamically stable inverse kinematics of humanoid robots}'', IEEE International Conference on Robotics and Biomimetics (ROBIO), 2017, pp. 1818-1823, doi: \url{10.1109/ROBIO.2017.8324682}.}
+    \descitem \label{robio} {\textbf{S Phaniteja}, Parijat Dewangan, Pooja Guhan, Abhishek Sarkar, and K. Madhava Krishna. ``\textit{A deep reinforcement learning approach for dynamically stable inverse kinematics of humanoid robots}'', IEEE International Conference on Robotics and Biomimetics (ROBIO), 2017, pp. 1818-1823, \url{https://doi.org/10.1109/ROBIO.2017.8324682}.}
 
-    \descitem \label{raha16} {Divyanshu Goel, \textbf{S Phani Teja}, Parijat Dewangan, Suril V. Shah, Abhishek Sarkar, and K. Madhava Krishna. ``\textit{Design and development of a humanoid with articulated torso}'', International Conference on Robotics and Automation for Humanitarian Applications (RAHA), 2016, pp. 1-5, doi: \url{10.1109/RAHA.2016.7931878}.}
+    \descitem \label{raha16} {Divyanshu Goel, \textbf{S Phani Teja}, Parijat Dewangan, Suril V. Shah, Abhishek Sarkar, and K. Madhava Krishna. ``\textit{Design and development of a humanoid with articulated torso}'', International Conference on Robotics and Automation for Humanitarian Applications (RAHA), 2016, pp. 1-5, \url{https://doi.org/10.1109/RAHA.2016.7931878}.}
 
-    \descitem \label{iros15} {Sri Harsha Turlapati, Mihir Shah, \textbf{S Phani Teja}, Avinash Siravuru, and Suril V. Shah. ``\textit{Stair climbing using a compliant modular robot}'', \bt{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2015, pp. 3332-3339, doi: \url{10.1109/IROS.2015.7353841}.}
+    \descitem \label{iros15} {Sri Harsha Turlapati, Mihir Shah, \textbf{S Phani Teja}, Avinash Siravuru, and Suril V. Shah. ``\textit{Stair climbing using a compliant modular robot}'', \bt{IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}, 2015, pp. 3332-3339, \url{https://doi.org/10.1109/IROS.2015.7353841}.}
 
     \descitem \label{air15} {\textbf{S Phani Teja}, Sri Harsha, Avinash Siravuru, Suril V. Shah, and K. Madhava Krishna. ``\textit{An improved compliant joint design of a modular robot for descending big obstacles}'', In Proceedings of the 2015 Conference on Advances In Robotics (AIR '15). Article 68, pp. 1–6. \url{https://doi.org/10.1145/2783449.2783518}.}
 \end{descenumerate}
 \vspace{6pt}
 
-\boldheading{Workshops}
-\begin{descenumerate}{W}{5}
+\boldheading{Workshops and Symposia}
+\begin{descenumerate}{W}{6}
    \descitem \label{planrob} {\textbf{Phani Teja Singamaneni}, Alessandro Umbrico, Andrea Orlandini, and Rachid Alami. ``\textit{Adaptive Robot Navigation through Integrated Task and Motion Planning}'', \bt{PlanRob Workshop, International Conference on Automated Planning and Scheduling (ICAPS)}, 2023.}
 
-    \descitem {\textbf{Phani Teja Singamaneni}, Alessandro Umbrico, Andrea Orlandini, and Rachid Alami. ``\textit{Towards Enhancing Social Navigation through Contextual and Human-related Knowledge}'', International Conference on Social Robotics, ALTRUIST Workshop, 2022. https://hdl.handle.net/20.500.14243/515335.}
+    \descitem {\textbf{Phani Teja Singamaneni}, Alessandro Umbrico, Andrea Orlandini, and Rachid Alami. ``\textit{Towards Enhancing Social Navigation through Contextual and Human-related Knowledge}'', International Conference on Social Robotics, ALTRUIST Workshop, 2022. \url{https://hdl.handle.net/20.500.14243/515335}.}
 
     \descitem \label{imhus2} {Olivier Hauterville, Camino Fernández, \textbf{Phani Teja Singamaneni}, Anthony Favier, Vicente Matellán, and Rachid Alami. 
     ``\textit{IMHuS: Intelligent Multi-Human Simulator}'', IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), 2022, Workshop on Artificial Intelligence for Social Robots Interacting with Humans in the Real World.}
 
-    \descitem {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Invisible Humans in Human-aware Robot Navigation}'', International Conference on Robotics and Automation (ICRA), 2022, Workshop on Social Robot Navigation: Advances and Evaluation.}
+    \descitem \label{invisible22} {\textbf{Phani Teja Singamaneni}, Anthony Favier, and Rachid Alami. ``\textit{Invisible Humans in Human-aware Robot Navigation}'', International Conference on Robotics and Automation (ICRA), 2022, Workshop on Social Robot Navigation: Advances and Evaluation.}
 
     \descitem \label{inhus2} {Anthony Favier, \textbf{Phani Teja Singamaneni}, and Rachid Alami. ``\textit{Simulating intelligent human agents for intricate social robot navigation}'', Robotics: Science and Systems (RSS), 2021, Workshop on Social Robot Navigation.}
+
+    \descitem \label{mummer19} {Mary Ellen Foster, Bart Craenen, Amol Deshmukh, Oliver Lemon, Emanuele Bastianelli, Christian Dondrup, Ioannis Papaioannou, Andrea Vanzo, Jean-Marc Odobez, Olivier Canévet, Yuanzhouhan Cao, Weipeng He, Angel Martínez-González, Petr Motlicek, Rémy Siegfried, Rachid Alami, Kathleen Belhassein, Guilhem Buisan, Aurélie Clodic, Amandine Mayima, Yoan Sallami, Guillaume Sarthou, \textbf{Phani Teja Singamaneni}, Jules Waldhart, et al. ``\textit{MuMMER: Socially Intelligent Human-Robot Interaction in Public Spaces}'', AAAI Fall Symposium on Artificial Intelligence for Human-Robot Interaction (AI-HRI), 2019. \url{https://doi.org/10.48550/arXiv.1909.06749}.}
  \end{descenumerate}
- 
+
+\boldheading{Book Chapters}
+\begin{descenumerate}{B}{1}
+    \descitem \label{book26} {\textbf{Phani Teja Singamaneni} (contributing author). ``\textit{Personal Robots for Enhanced Quality of Life}'', Chapter 7, Springer, ISBN 978-3-032-37619-0. (Forthcoming)}
+\end{descenumerate}
+
+\boldheading{Software}
+\begin{descenumerate}{S}{2}
+    \descitem \label{cohannav2} {\textbf{Phani Teja Singamaneni}. ``\textit{CoHAN-Nav2}'', version 0.1.0, Zenodo, 2026. \url{https://doi.org/10.5281/zenodo.18836636}.}
+    \descitem \label{cohan2zen} {\textbf{Phani Teja Singamaneni}. ``\textit{Cooperative Human Aware Robot Navigation (CoHAN 2.0)}'', Zenodo, 2025. \url{https://doi.org/10.5281/zenodo.16918132}.}
+\end{descenumerate}
+
 \gap[10pt]
 \htwo{5.4.}{Patents}
-\vspace{-6pt}{\itshape Fill in the table for each patent.\par}\vspace{6pt}
-{\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{2.2}
-\begin{tblr}{width=\linewidth,hlines,vlines,colspec={Q[36mm,m,bg=lbl,font=\bfseries,fg=navy]X[m]},rows={ht=7mm}}
-Name & \\
-Inventor(s): & \\
-Patent number & \\
-\end{tblr}\par}
+% \vspace{-6pt}{\itshape Fill in the table for each patent.\par}\vspace{6pt}
+% {\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{2.2}
+% \begin{tblr}{width=\linewidth,hlines,vlines,colspec={Q[36mm,m,bg=lbl,font=\bfseries,fg=navy]X[m]},rows={ht=7mm}}
+% Name & \\
+% Inventor(s): & \\
+% Patent number & \\
+% \end{tblr}\par}
+Not applicable.
 
 \htwo{5.5.}{Oral communications}
-\gap[40pt]
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=1pt,parsep=0pt]
+    \item \ref{new_metrics} \textit{Towards Benchmarking Human-Aware Robot Navigation: A New Perspective and Metrics}, IEEE RO-MAN 2023.
+    \item \ref{cohan3} \textit{Watch out! There may be a Human. Addressing Invisible Humans in Social Navigation}, IEEE/RSJ IROS 2022.
+    \item \ref{cohan2} \textit{Human-Aware Navigation Planner for Diverse Human-Robot Interaction Contexts}, IEEE/RSJ IROS 2021.
+    \item \ref{cohan1} \textit{Hateb-2: Reactive planning and decision making in human-robot co-navigation}, IEEE RO-MAN 2020.
+    \item \ref{humanoids18} \textit{Learning dual arm coordinated reachability tasks in a humanoid robot with articulated torso}, IEEE-RAS Humanoids 2018.
+    \item \ref{air15} \textit{An improved compliant joint design of a modular robot for descending big obstacles}, AIR 2015.
+    \item \ref{planrob} \textit{Adaptive Robot Navigation through Integrated Task and Motion Planning}, PlanRob Workshop, ICAPS 2023.
+    \item \ref{imhus2} \textit{IMHuS: Intelligent Multi-Human Simulator}, Workshop on AI for Social Robots Interacting with Humans in the Real World, IROS 2022.
+    \item \ref{invisible22} \textit{Invisible Humans in Human-aware Robot Navigation}, Workshop on Social Robot Navigation: Advances and Evaluation, ICRA 2022.
+\end{itemize}
 \htwo{5.6.}{Poster communications}
-\gap[20pt]
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=1pt,parsep=0pt]
+    \item \ref{hri26} \textit{How Human Motion Prediction Quality Shapes Social Robot Navigation Performance in Constrained Spaces}, ACM/IEEE HRI 2026.
+    \item \ref{bi3dataset} \textit{Bi$^3$: A Biplatform, Bicultural, Biperson Dataset for Social Robot Navigation}, IEEE ICRA 2026.
+    \item \ref{iv19} \textit{Motion planning framework for autonomous vehicles: A time scaled collision cone interleaved model predictive control approach}, IEEE IV 2019.
+\end{itemize}
 \htwo{5.7.}{Invited seminars}
+\begin{itemize}[leftmargin=*,topsep=0pt,itemsep=1pt,parsep=0pt]
+    \item Invited talk, \textit{Advances and Challenges in Robot Social Navigation} Workshop, European Conference on Mobile Robots (ECMR), Padova, Italy, September 2025.
+    \item Guest lecture, U2IS -- ENSTA, Paris, France, May 2026.
+    \item Invited lecture on human-aware robot navigation, \href{https://aihumanrobot.sciencesconf.org/resource/page/id/1}{AIxHRI Summer School}, July 2026.
+\end{itemize}
 
 \end{document}

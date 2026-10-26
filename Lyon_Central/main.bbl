@@ -1,0 +1,977 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{singamaneni2024survey}{article}{}
+      \name{author}{7}{}{%
+        {{hash=c2f7f287a420caf390631d147bb740a0}{%
+           family={Singamaneni},
+           familyi={S\bibinitperiod},
+           given={Phani\bibnamedelima Teja},
+           giveni={P\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=54ed600ab92197b910ed5ee88f94b5f1}{%
+           family={Bachiller-Burgos},
+           familyi={B\bibinithyphendelim B\bibinitperiod},
+           given={Pilar},
+           giveni={P\bibinitperiod}}}%
+        {{hash=edd44b487bd3d193c553d36b4b3d2782}{%
+           family={Manso},
+           familyi={M\bibinitperiod},
+           given={Luis\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=84d90814a8134e2764ba6bfbbc0aafa2}{%
+           family={Garrell},
+           familyi={G\bibinitperiod},
+           given={Anaís},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cdb10d814e6c134a23bf440a993d5f44}{%
+           family={Sanfeliu},
+           familyi={S\bibinitperiod},
+           given={Alberto},
+           giveni={A\bibinitperiod}}}%
+        {{hash=c0da267a6d19a04c1d9fc8d13febe6cf}{%
+           family={Spalanzani},
+           familyi={S\bibinitperiod},
+           given={Anne},
+           giveni={A\bibinitperiod}}}%
+        {{hash=f202359618e98819ad00a5f96fc713bb}{%
+           family={Alami},
+           familyi={A\bibinitperiod},
+           given={Rachid},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {SAGE Publications}%
+      }
+      \strng{namehash}{fe3061d12c764e33e691b4b489f783d3}
+      \strng{fullhash}{e3c31a8d12a2868589b337cbb6feaa2a}
+      \strng{bibnamehash}{fe3061d12c764e33e691b4b489f783d3}
+      \strng{authorbibnamehash}{fe3061d12c764e33e691b4b489f783d3}
+      \strng{authornamehash}{fe3061d12c764e33e691b4b489f783d3}
+      \strng{authorfullhash}{e3c31a8d12a2868589b337cbb6feaa2a}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1741-3176}
+      \field{journaltitle}{The International Journal of Robotics Research}
+      \field{month}{2}
+      \field{title}{A survey on socially aware robot navigation: Taxonomy and future challenges}
+      \field{year}{2024}
+      \verb{doi}
+      \verb 10.1177/02783649241230562
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1177/02783649241230562
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1177/02783649241230562
+      \endverb
+    \endentry
+    \entry{sorokoletova2024enhancing}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=2aa5d78cc00bff267dc2ced313daa257}{%
+           family={Sorokoletova},
+           familyi={S\bibinitperiod},
+           given={Olga\bibnamedelima E.},
+           giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=92cb33df4d317b024fde85d000a29b9b}{%
+           family={Iocchi},
+           familyi={I\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{fullhash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{bibnamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{authorbibnamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{authornamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{authorfullhash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.RO}
+      \field{eprinttype}{arXiv}
+      \field{title}{Enhancing robot reliability for health-care facilities by means of Human-Aware Navigation Planning}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2409.17131
+      \endverb
+    \endentry
+    \entry{kouvaritakis2016model}{article}{}
+      \name{author}{2}{}{%
+        {{hash=cc72b15c91fef7534aa5376086a38baf}{%
+           family={Kouvaritakis},
+           familyi={K\bibinitperiod},
+           given={Basil},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6c557ab1156d90dd2aa0a798d04da6b7}{%
+           family={Cannon},
+           familyi={C\bibinitperiod},
+           given={Mark},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{5d1f6e7ddac27396454e3c840ccf8934}
+      \strng{fullhash}{5d1f6e7ddac27396454e3c840ccf8934}
+      \strng{bibnamehash}{5d1f6e7ddac27396454e3c840ccf8934}
+      \strng{authorbibnamehash}{5d1f6e7ddac27396454e3c840ccf8934}
+      \strng{authornamehash}{5d1f6e7ddac27396454e3c840ccf8934}
+      \strng{authorfullhash}{5d1f6e7ddac27396454e3c840ccf8934}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Switzerland: Springer International Publishing}
+      \field{number}{13-56}
+      \field{title}{Model predictive control}
+      \field{volume}{38}
+      \field{year}{2016}
+      \field{pages}{7}
+      \range{pages}{1}
+    \endentry
+    \entry{heirung2018stochastic}{article}{}
+      \name{author}{4}{}{%
+        {{hash=afa589057e847e457a9b381a49d3b501}{%
+           family={Heirung},
+           familyi={H\bibinitperiod},
+           given={Tor\bibnamedelimb Aksel\bibnamedelima N},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=d9665495ef186de62fbfaa6e4332f63e}{%
+           family={Paulson},
+           familyi={P\bibinitperiod},
+           given={Joel\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=8a0891dd8234f8fef3a8f2c4ae54cad1}{%
+           family={O’Leary},
+           familyi={O\bibinitperiod},
+           given={Jared},
+           giveni={J\bibinitperiod}}}%
+        {{hash=627904935c9ec79cfb7f3a336d102812}{%
+           family={Mesbah},
+           familyi={M\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{62440d59e9bbdc415da10575fc398136}
+      \strng{fullhash}{b01f28b1ca256a33a01bef611021a46c}
+      \strng{bibnamehash}{62440d59e9bbdc415da10575fc398136}
+      \strng{authorbibnamehash}{62440d59e9bbdc415da10575fc398136}
+      \strng{authornamehash}{62440d59e9bbdc415da10575fc398136}
+      \strng{authorfullhash}{b01f28b1ca256a33a01bef611021a46c}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Computers \& Chemical Engineering}
+      \field{title}{Stochastic model predictive control—how does it work?}
+      \field{volume}{114}
+      \field{year}{2018}
+      \field{pages}{158\bibrangedash 170}
+      \range{pages}{13}
+    \endentry
+    \entry{zhu2025fusion}{article}{}
+      \name{author}{2}{}{%
+        {{hash=bf2c28ad11643c0435ab5936feffb490}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Boyuan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=df5be712a0b05d7540c9ca7e1e46f9ff}{%
+           family={Lou},
+           familyi={L\bibinitperiod},
+           given={Yunjiang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{71e31e0f8a9ae8b7e7081dbc5ee499e9}
+      \strng{fullhash}{71e31e0f8a9ae8b7e7081dbc5ee499e9}
+      \strng{bibnamehash}{71e31e0f8a9ae8b7e7081dbc5ee499e9}
+      \strng{authorbibnamehash}{71e31e0f8a9ae8b7e7081dbc5ee499e9}
+      \strng{authornamehash}{71e31e0f8a9ae8b7e7081dbc5ee499e9}
+      \strng{authorfullhash}{71e31e0f8a9ae8b7e7081dbc5ee499e9}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Computer Science}
+      \field{title}{Fusion of Reinforcement Learning and Simplified MPC for Path Tracking in Autonomous Vehicles}
+      \field{volume}{271}
+      \field{year}{2025}
+      \field{pages}{58\bibrangedash 64}
+      \range{pages}{7}
+    \endentry
+    \entry{paulson2020stochastic}{article}{}
+      \name{author}{4}{}{%
+        {{hash=d9665495ef186de62fbfaa6e4332f63e}{%
+           family={Paulson},
+           familyi={P\bibinitperiod},
+           given={Joel\bibnamedelima A},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=d2a4045ba913e3ff43fa1cdc60be68d0}{%
+           family={Buehler},
+           familyi={B\bibinitperiod},
+           given={Edward\bibnamedelima A},
+           giveni={E\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=c81dcb1fe7fc39568b1e6eb3ca6a26bb}{%
+           family={Braatz},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima D},
+           giveni={R\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=627904935c9ec79cfb7f3a336d102812}{%
+           family={Mesbah},
+           familyi={M\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Taylor \& Francis}%
+      }
+      \strng{namehash}{8f75f1065c102050b9275d31c21038da}
+      \strng{fullhash}{db308e635a1ad426b2edda84b0841ed9}
+      \strng{bibnamehash}{8f75f1065c102050b9275d31c21038da}
+      \strng{authorbibnamehash}{8f75f1065c102050b9275d31c21038da}
+      \strng{authornamehash}{8f75f1065c102050b9275d31c21038da}
+      \strng{authorfullhash}{db308e635a1ad426b2edda84b0841ed9}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{International Journal of Control}
+      \field{number}{1}
+      \field{title}{Stochastic model predictive control with joint chance constraints}
+      \field{volume}{93}
+      \field{year}{2020}
+      \field{pages}{126\bibrangedash 139}
+      \range{pages}{14}
+    \endentry
+    \entry{jia2025architectures}{article}{}
+      \name{author}{2}{}{%
+        {{hash=c46315fab91e2b5cf2710a7c8e8c1503}{%
+           family={Jia},
+           familyi={J\bibinitperiod},
+           given={Xiaolong},
+           giveni={X\bibinitperiod}}}%
+        {{hash=0aa5a9223f51b63c5acfacae44eb141f}{%
+           family={Bajaj},
+           familyi={B\bibinitperiod},
+           given={Nikhil},
+           giveni={N\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{fbd2edeb624fc410a081c0bf604cb228}
+      \strng{fullhash}{fbd2edeb624fc410a081c0bf604cb228}
+      \strng{bibnamehash}{fbd2edeb624fc410a081c0bf604cb228}
+      \strng{authorbibnamehash}{fbd2edeb624fc410a081c0bf604cb228}
+      \strng{authornamehash}{fbd2edeb624fc410a081c0bf604cb228}
+      \strng{authorfullhash}{fbd2edeb624fc410a081c0bf604cb228}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IFAC-PapersOnLine}
+      \field{number}{30}
+      \field{title}{On Architectures for Combining Reinforcement Learning and Model Predictive Control with Runtime Improvements}
+      \field{volume}{59}
+      \field{year}{2025}
+      \field{pages}{401\bibrangedash 406}
+      \range{pages}{6}
+    \endentry
+    \entry{kawaharazuka2025vision}{article}{}
+      \name{author}{5}{}{%
+        {{hash=65149a17cdb330a0ce852c3380517370}{%
+           family={Kawaharazuka},
+           familyi={K\bibinitperiod},
+           given={Kento},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4b21b08d4a5bec94e52939c69394ee4b}{%
+           family={Oh},
+           familyi={O\bibinitperiod},
+           given={Jihoon},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5fc3ffe3b1734b670b4936b2524597ce}{%
+           family={Yamada},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8b1ac4e074945df8dd16455dcc68886c}{%
+           family={Posner},
+           familyi={P\bibinitperiod},
+           given={Ingmar},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f86434cb0d86ba7eac5b0e3f3236abf0}{%
+           family={Zhu},
+           familyi={Z\bibinitperiod},
+           given={Yuke},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{39247274df7e28d57c4d5a79b0962346}
+      \strng{fullhash}{aaac911b48bf67fdfaad10e7d3d08e9d}
+      \strng{bibnamehash}{39247274df7e28d57c4d5a79b0962346}
+      \strng{authorbibnamehash}{39247274df7e28d57c4d5a79b0962346}
+      \strng{authornamehash}{39247274df7e28d57c4d5a79b0962346}
+      \strng{authorfullhash}{aaac911b48bf67fdfaad10e7d3d08e9d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{title}{Vision-language-action models for robotics: A review towards real-world applications}
+      \field{year}{2025}
+    \endentry
+    \entry{loulaki2024addressing}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=950dac8f907396bf10546a84d7850b23}{%
+           family={Loulaki},
+           familyi={L\bibinitperiod},
+           given={Marina},
+           giveni={M\bibinitperiod}}}%
+        {{hash=e35a88bea7b7c51d8b7e92734233aca5}{%
+           family={Kiourtis},
+           familyi={K\bibinitperiod},
+           given={Athanasios},
+           giveni={A\bibinitperiod}}}%
+        {{hash=79ad4a143059c121b90cb9bd18261d0a}{%
+           family={Mavrogiorgou},
+           familyi={M\bibinitperiod},
+           given={Argyro},
+           giveni={A\bibinitperiod}}}%
+        {{hash=adb94157b40c7a9b2a75fb51cc1a0a56}{%
+           family={Kyriazis},
+           familyi={K\bibinitperiod},
+           given={Dimosthenis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{2bf4100938ef60538b58f9778aadc2a0}
+      \strng{fullhash}{40ae1c0a8e4960bc67b2d032ed7a313f}
+      \strng{bibnamehash}{2bf4100938ef60538b58f9778aadc2a0}
+      \strng{authorbibnamehash}{2bf4100938ef60538b58f9778aadc2a0}
+      \strng{authornamehash}{2bf4100938ef60538b58f9778aadc2a0}
+      \strng{authorfullhash}{40ae1c0a8e4960bc67b2d032ed7a313f}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 E-Health and Bioengineering Conference (EHB)}
+      \field{title}{Addressing complex data integration and harmonization scenarios}
+      \field{year}{2024}
+      \field{pages}{1\bibrangedash 4}
+      \range{pages}{4}
+    \endentry
+    \entry{chang2021comprehensive}{article}{}
+      \name{author}{6}{}{%
+        {{hash=92fa5955af28e77359c28dcdd2a05845}{%
+           family={Chang},
+           familyi={C\bibinitperiod},
+           given={Xiaojun},
+           giveni={X\bibinitperiod}}}%
+        {{hash=ea994c055f8a76f92def910c6be5c657}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Pengzhen},
+           giveni={P\bibinitperiod}}}%
+        {{hash=bb8086bc558e911b1e82ee3738b8fe5a}{%
+           family={Xu},
+           familyi={X\bibinitperiod},
+           given={Pengfei},
+           giveni={P\bibinitperiod}}}%
+        {{hash=fb1583081b552d17e0ca63eef1a0aad2}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zhihui},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=380c49395293074c7302a362bae865ff}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Xiaojiang},
+           giveni={X\bibinitperiod}}}%
+        {{hash=993c97760705099347cbfe0272293e06}{%
+           family={Hauptmann},
+           familyi={H\bibinitperiod},
+           given={Alex},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{d4f5cb1620165f9bceef608d4b5189d1}
+      \strng{fullhash}{5a2cb7d2f0d91e12c832423512b9f984}
+      \strng{bibnamehash}{d4f5cb1620165f9bceef608d4b5189d1}
+      \strng{authorbibnamehash}{d4f5cb1620165f9bceef608d4b5189d1}
+      \strng{authornamehash}{d4f5cb1620165f9bceef608d4b5189d1}
+      \strng{authorfullhash}{5a2cb7d2f0d91e12c832423512b9f984}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Pattern Analysis and Machine Intelligence}
+      \field{number}{1}
+      \field{title}{A comprehensive survey of scene graphs: Generation and application}
+      \field{volume}{45}
+      \field{year}{2021}
+      \field{pages}{1\bibrangedash 26}
+      \range{pages}{26}
+    \endentry
+    \entry{li2022dynamic}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3a7bd14c1ee0348efc686c0a2e80a38c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Shufei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=17d64641c9501c33dda0578b773d6f4f}{%
+           family={Zheng},
+           familyi={Z\bibinitperiod},
+           given={Pai},
+           giveni={P\bibinitperiod}}}%
+        {{hash=3726ff948a461645ee37c43f72883778}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Zuoxu},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=70694efde572f7777f4d9a4f6130c42e}{%
+           family={Fan},
+           familyi={F\bibinitperiod},
+           given={Junming},
+           giveni={J\bibinitperiod}}}%
+        {{hash=65436496e63d7ea35a6bc5c412afdc17}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lihui},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{5c268ae2b5ed442d505b092c2b343bcc}
+      \strng{fullhash}{5b42e3b8b10bcf36f6833daf3930329b}
+      \strng{bibnamehash}{5c268ae2b5ed442d505b092c2b343bcc}
+      \strng{authorbibnamehash}{5c268ae2b5ed442d505b092c2b343bcc}
+      \strng{authornamehash}{5c268ae2b5ed442d505b092c2b343bcc}
+      \strng{authorfullhash}{5b42e3b8b10bcf36f6833daf3930329b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Procedia Cirp}
+      \field{title}{Dynamic scene graph for mutual-cognition generation in proactive human-robot collaboration}
+      \field{volume}{107}
+      \field{year}{2022}
+      \field{pages}{943\bibrangedash 948}
+      \range{pages}{6}
+    \endentry
+    \entry{vaswani2017attention}{article}{}
+      \name{author}{8}{}{%
+        {{hash=7f28e84700536646dd6620a0db07ad09}{%
+           family={Vaswani},
+           familyi={V\bibinitperiod},
+           given={Ashish},
+           giveni={A\bibinitperiod}}}%
+        {{hash=62efade83d70f0323fe248755e6c90c5}{%
+           family={Shazeer},
+           familyi={S\bibinitperiod},
+           given={Noam},
+           giveni={N\bibinitperiod}}}%
+        {{hash=06649ebab1ea5cac0250746a19764975}{%
+           family={Parmar},
+           familyi={P\bibinitperiod},
+           given={Niki},
+           giveni={N\bibinitperiod}}}%
+        {{hash=831027ee0ebf22375e2a86afc1881909}{%
+           family={Uszkoreit},
+           familyi={U\bibinitperiod},
+           given={Jakob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=2fd2982e30ebcec93ec1cf76e0d797fd}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Llion},
+           giveni={L\bibinitperiod}}}%
+        {{hash=27b07e4eacbf4ef7a1438e3badb7dd8d}{%
+           family={Gomez},
+           familyi={G\bibinitperiod},
+           given={Aidan\bibnamedelima N},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=540fcd72e1fa4bbed46604f4e6cff817}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={{Ł}ukasz},
+           giveni={Ł\bibinitperiod}}}%
+        {{hash=95595a0fefb86187cbc36e551017d332}{%
+           family={Polosukhin},
+           familyi={P\bibinitperiod},
+           given={Illia},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{fullhash}{cb26e47f6b8133865271fc8483132297}
+      \strng{bibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorbibnamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authornamehash}{ee273ab30cfb889666f8c4d806eb9ce7}
+      \strng{authorfullhash}{cb26e47f6b8133865271fc8483132297}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Advances in neural information processing systems}
+      \field{title}{Attention is all you need}
+      \field{volume}{30}
+      \field{year}{2017}
+    \endentry
+    \entry{errica2021graph}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=22926f82bacf9b22bf600cbf58f78257}{%
+           family={Errica},
+           familyi={E\bibinitperiod},
+           given={Federico},
+           giveni={F\bibinitperiod}}}%
+        {{hash=d3908573ecb0e99b6931248865657610}{%
+           family={Bacciu},
+           familyi={B\bibinitperiod},
+           given={Davide},
+           giveni={D\bibinitperiod}}}%
+        {{hash=3d75c2b2b25ec2d2cda1b63b5aea2325}{%
+           family={Micheli},
+           familyi={M\bibinitperiod},
+           given={Alessio},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {PMLR}%
+      }
+      \strng{namehash}{24382ab518932a052dfdcf1ce11f1fd5}
+      \strng{fullhash}{24382ab518932a052dfdcf1ce11f1fd5}
+      \strng{bibnamehash}{24382ab518932a052dfdcf1ce11f1fd5}
+      \strng{authorbibnamehash}{24382ab518932a052dfdcf1ce11f1fd5}
+      \strng{authornamehash}{24382ab518932a052dfdcf1ce11f1fd5}
+      \strng{authorfullhash}{24382ab518932a052dfdcf1ce11f1fd5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International conference on machine learning}
+      \field{title}{Graph mixture density networks}
+      \field{year}{2021}
+      \field{pages}{3025\bibrangedash 3035}
+      \range{pages}{11}
+    \endentry
+    \entry{zhang2024vision}{article}{}
+      \name{author}{4}{}{%
+        {{hash=6597ae12486a4584d1d38b5e724972e3}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Jingyi},
+           giveni={J\bibinitperiod}}}%
+        {{hash=08b63e81ca7d6c6b8139f109efd88359}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Jiaxing},
+           giveni={J\bibinitperiod}}}%
+        {{hash=35bb6d6f396f52d5c1b9b357b67d4c24}{%
+           family={Jin},
+           familyi={J\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=77b9b734f41bfc5642bd9e9e700e7e27}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Shijian},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{96053e7cca4266c8f6ad66738043371a}
+      \strng{fullhash}{0771fb19b7d488e63894c4ed65fe90e3}
+      \strng{bibnamehash}{96053e7cca4266c8f6ad66738043371a}
+      \strng{authorbibnamehash}{96053e7cca4266c8f6ad66738043371a}
+      \strng{authornamehash}{96053e7cca4266c8f6ad66738043371a}
+      \strng{authorfullhash}{0771fb19b7d488e63894c4ed65fe90e3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE transactions on pattern analysis and machine intelligence}
+      \field{number}{8}
+      \field{title}{Vision-language models for vision tasks: A survey}
+      \field{volume}{46}
+      \field{year}{2024}
+      \field{pages}{5625\bibrangedash 5644}
+      \range{pages}{20}
+    \endentry
+    \entry{hu2022lora}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{8}{}{%
+        {{hash=e6a95d07b8ae7f14e4eb777c6980a059}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Edward\bibnamedelima J},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=1701c0f05662e92cf52cfc8c16437496}{%
+           family={Shen},
+           familyi={S\bibinitperiod},
+           given={Yelong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ab0fdbc1586103dda7ac5e0852e5b2c3}{%
+           family={Wallis},
+           familyi={W\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod}}}%
+        {{hash=eaa5cc98b7f19b4ce07c832213a13b9d}{%
+           family={Allen-Zhu},
+           familyi={A\bibinithyphendelim Z\bibinitperiod},
+           given={Zeyuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=0d2c91b24f885b22d373a892a768abc8}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yuanzhi},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=b654b88ecd4c3ff1ea29da275bce701c}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Shean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=55f210233ac686af68eba11a97bd84e2}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Lu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=05d71a9c5e7ac79222e01a55af0ccb93}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Weizhu},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{d775178c34083951ab1e07df578582c3}
+      \strng{fullhash}{b556d453b7821a0598655b131d599042}
+      \strng{bibnamehash}{d775178c34083951ab1e07df578582c3}
+      \strng{authorbibnamehash}{d775178c34083951ab1e07df578582c3}
+      \strng{authornamehash}{d775178c34083951ab1e07df578582c3}
+      \strng{authorfullhash}{b556d453b7821a0598655b131d599042}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ICLR}
+      \field{number}{2}
+      \field{title}{Lora: Low-rank adaptation of large language models.}
+      \field{volume}{1}
+      \field{year}{2022}
+      \field{pages}{3}
+      \range{pages}{1}
+    \endentry
+    \entry{luo2025towards}{article}{}
+      \name{author}{5}{}{%
+        {{hash=3026c84fa980ca67eda512de2412ad90}{%
+           family={Luo},
+           familyi={L\bibinitperiod},
+           given={Tiange},
+           giveni={T\bibinitperiod}}}%
+        {{hash=c307f4617488a85cda40a206491f0473}{%
+           family={Logeswaran},
+           familyi={L\bibinitperiod},
+           given={Lajanugen},
+           giveni={L\bibinitperiod}}}%
+        {{hash=c63e6fd4e6c541d3f6847edb803efabd}{%
+           family={Kim},
+           familyi={K\bibinitperiod},
+           given={Jaekyeom},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90edc587e1d523d4e173b1fe6e733445}{%
+           family={Johnson},
+           familyi={J\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=d09ea8631bf43468107b5ef02c5195aa}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Honglak},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2271f36d7a2ad3b684f437e5effde654}
+      \strng{fullhash}{a05cf758c375876b2ec5dbbe842d86d5}
+      \strng{bibnamehash}{2271f36d7a2ad3b684f437e5effde654}
+      \strng{authorbibnamehash}{2271f36d7a2ad3b684f437e5effde654}
+      \strng{authornamehash}{2271f36d7a2ad3b684f437e5effde654}
+      \strng{authorfullhash}{a05cf758c375876b2ec5dbbe842d86d5}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2512.19219}
+      \field{title}{Towards Minimal Fine-Tuning of VLMs}
+      \field{year}{2025}
+    \endentry
+    \entry{rizk2018decision}{article}{}
+      \name{author}{3}{}{%
+        {{hash=3bf0bdfcd1ad3a4d6ed3e1a1a5d94555}{%
+           family={Rizk},
+           familyi={R\bibinitperiod},
+           given={Yara},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=ab9ad0fd1072886327bd8fcf16882d22}{%
+           family={Awad},
+           familyi={A\bibinitperiod},
+           given={Mariette},
+           giveni={M\bibinitperiod}}}%
+        {{hash=4bc32c22fbebf44819aba7d3f76def11}{%
+           family={Tunstel},
+           familyi={T\bibinitperiod},
+           given={Edward\bibnamedelima W},
+           giveni={E\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{436e383a24c005ec63ba8989e83c0c6b}
+      \strng{fullhash}{436e383a24c005ec63ba8989e83c0c6b}
+      \strng{bibnamehash}{436e383a24c005ec63ba8989e83c0c6b}
+      \strng{authorbibnamehash}{436e383a24c005ec63ba8989e83c0c6b}
+      \strng{authornamehash}{436e383a24c005ec63ba8989e83c0c6b}
+      \strng{authorfullhash}{436e383a24c005ec63ba8989e83c0c6b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Transactions on Cognitive and Developmental Systems}
+      \field{number}{3}
+      \field{title}{Decision making in multiagent systems: A survey}
+      \field{volume}{10}
+      \field{year}{2018}
+      \field{pages}{514\bibrangedash 529}
+      \range{pages}{16}
+    \endentry
+    \entry{amiri2020learning}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=1f860596aaeff392046db1351436f1d8}{%
+           family={Amiri},
+           familyi={A\bibinitperiod},
+           given={Saeid},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cd7b3b26e89bce3c98f8c5127b60e4de}{%
+           family={Shirazi},
+           familyi={S\bibinitperiod},
+           given={Mohammad\bibnamedelima Shokrolah},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=32a87172065ad08fcde987f9bc4473f7}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Shiqi},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{492584a8aa6a8b5a5764910e3b3f6360}
+      \strng{fullhash}{492584a8aa6a8b5a5764910e3b3f6360}
+      \strng{bibnamehash}{492584a8aa6a8b5a5764910e3b3f6360}
+      \strng{authorbibnamehash}{492584a8aa6a8b5a5764910e3b3f6360}
+      \strng{authornamehash}{492584a8aa6a8b5a5764910e3b3f6360}
+      \strng{authorfullhash}{492584a8aa6a8b5a5764910e3b3f6360}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the AAAI conference on artificial intelligence}
+      \field{title}{Learning and reasoning for robot sequential decision making under uncertainty}
+      \field{volume}{34}
+      \field{year}{2020}
+      \field{pages}{2726\bibrangedash 2733}
+      \range{pages}{8}
+    \endentry
+    \entry{schmidt2024investigating}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=7e1ba000c1b9587cc83b5ec52a28e161}{%
+           family={Schmidt-Wolf},
+           familyi={S\bibinithyphendelim W\bibinitperiod},
+           given={Melanie},
+           giveni={M\bibinitperiod}}}%
+        {{hash=d936090973edccbd5c69f47ac9491ac5}{%
+           family={Becker},
+           familyi={B\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=592ea81e2ee3fa092b5dfb3d0e8aead9}{%
+           family={Oliva},
+           familyi={O\bibinitperiod},
+           given={Denielle},
+           giveni={D\bibinitperiod}}}%
+        {{hash=946185aa9e0973c11942b178f542e4be}{%
+           family={Nicolescu},
+           familyi={N\bibinitperiod},
+           given={Monica},
+           giveni={M\bibinitperiod}}}%
+        {{hash=58ddf6b879f6294b17ab1a1f1ac15cff}{%
+           family={Feil-Seifer},
+           familyi={F\bibinithyphendelim S\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{0e47f481647bd6d710265dc5acdb0c93}
+      \strng{fullhash}{5bc83c9c2becb150ea07be0adfcf5446}
+      \strng{bibnamehash}{0e47f481647bd6d710265dc5acdb0c93}
+      \strng{authorbibnamehash}{0e47f481647bd6d710265dc5acdb0c93}
+      \strng{authornamehash}{0e47f481647bd6d710265dc5acdb0c93}
+      \strng{authorfullhash}{5bc83c9c2becb150ea07be0adfcf5446}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2024 33rd IEEE International Conference on Robot and Human Interactive Communication (ROMAN)}
+      \field{title}{Investigating non-verbal cues in cluttered environments: Insights into legible motion from interpersonal interaction}
+      \field{year}{2024}
+      \field{pages}{1250\bibrangedash 1257}
+      \range{pages}{8}
+    \endentry
+    \entry{song2025goat}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{hash=9ad91c94e4bbce17019b918da6037ec9}{%
+           family={Song},
+           familyi={S\bibinitperiod},
+           given={Yaodong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c357bacfbf8f4e29c2daa8db907dcd58}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Hongjie},
+           giveni={H\bibinitperiod}}}%
+        {{hash=a0350983e01ebd986ada9aa2ed962076}{%
+           family={Lian},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=56a5598e06082938c7a8af33a5c8614f}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yuxin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=cf7d1835154c897c060cbdef44f45825}{%
+           family={Xia},
+           familyi={X\bibinitperiod},
+           given={Guangmin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=7246d27c9fd9a874245ede3cb8cfc00d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Zehan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=1750abeb4464fa2bbf8c3d0acc3246e9}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Genliang},
+           giveni={G\bibinitperiod}}}%
+        {{hash=ae51735c9c31621f49c0b252c58ecd51}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Jian},
+           giveni={J\bibinitperiod}}}%
+        {{hash=5f61775c2fbdd179d018bb797bd0ce1d}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Jie},
+           giveni={J\bibinitperiod}}}%
+        {{hash=f774e8f87b804bd36ac50eb0183b509c}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Yongxiang},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{e394501dc556e3a733e74936c806eca1}
+      \strng{fullhash}{478924bd60b84579d57fa7ddd43cacf2}
+      \strng{bibnamehash}{e394501dc556e3a733e74936c806eca1}
+      \strng{authorbibnamehash}{e394501dc556e3a733e74936c806eca1}
+      \strng{authornamehash}{e394501dc556e3a733e74936c806eca1}
+      \strng{authorfullhash}{478924bd60b84579d57fa7ddd43cacf2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{arXiv preprint arXiv:2504.12339}
+      \field{title}{GOAT-TTS: Expressive and Realistic Speech Generation via A Dual-Branch LLM}
+      \field{year}{2025}
+    \endentry
+    \entry{soton506590}{inproceedings}{}
+      \name{author}{4}{}{%
+        {{hash=c986e773eddfd67207eaa48dd0cd5c95}{%
+           family={Le},
+           familyi={L\bibinitperiod},
+           given={Thien\bibnamedelima Doanh},
+           giveni={T\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=5fd5c95caad6eb145e8b69192c4bb62f}{%
+           family={Nguyen},
+           familyi={N\bibinitperiod},
+           given={Tan\bibnamedelimb Viet\bibnamedelima Tuyen},
+           giveni={T\bibinitperiod\bibinitdelim V\bibinitperiod\bibinitdelim T\bibinitperiod}}}%
+        {{hash=71ebdd88c35e1ae9e40dfdffe375d521}{%
+           family={Duy},
+           familyi={D\bibinitperiod},
+           given={Tan\bibnamedelima Le},
+           giveni={T\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=db85cee918684ef51419bea2b967883d}{%
+           family={Ramchurn},
+           familyi={R\bibinitperiod},
+           given={Gopal},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{21c258a8c24cad600c97a3c9cee884f3}
+      \strng{fullhash}{991d65d1665fbe4ecd9b6a0f52e3b9d3}
+      \strng{bibnamehash}{21c258a8c24cad600c97a3c9cee884f3}
+      \strng{authorbibnamehash}{21c258a8c24cad600c97a3c9cee884f3}
+      \strng{authornamehash}{21c258a8c24cad600c97a3c9cee884f3}
+      \strng{authorfullhash}{991d65d1665fbe4ecd9b6a0f52e3b9d3}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Non-verbal gestures play a crucial role in social robots, enabling them to signal their intentions to users during human?robot interaction (HRI). While recent research in this domain has primarily focused on robot gesture generation, there remains a limited number of studies on multimodal generation frameworks, where generated gestures are harmonized with other generated modalities, to better convey the robot?s intention to users via a wider range of communication channels. Inspired by recent advancements in multimodal large language models (MLLMs), we propose a novel framework that integrates motion generation models with existing MLLMs to produce high-quality 3D motions without the need for extensive multimodal training. Our framework comprises three key components: a Denoising Diffusion Motion Generation (DDMG) module that maps text descriptions to motion sequences using a diffusion-based approach; a Motion Decoding Alignment (MDA) module that refines motion representations by incorporating signal embeddings generated by an LLM; and a Fusion Module (FM) that integrates motion features trained from previous phases to enhance coherence and realism. We conducted a series of experiments on a publicly available dataset to evaluate the efficiency of the proposed framework in terms of motion quality, diversity, and semantic alignment. The results suggest that our multimodal approach can serve as a powerful controller for robot gesture generation, offering a more scalable and effective solution, particularly for social HRI.}
+      \field{booktitle}{BEAR Workshop, The 2025 IEEE International Conference on Robot and Human Interactive Communication (25/08/25 - 29/08/25)}
+      \field{title}{A multimodal large language model framework for gesture generation in social robots}
+      \field{year}{2025}
+      \verb{urlraw}
+      \verb https://eprints.soton.ac.uk/506590/
+      \endverb
+      \verb{url}
+      \verb https://eprints.soton.ac.uk/506590/
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
