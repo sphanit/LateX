@@ -85,37 +85,6 @@
       \verb http://dx.doi.org/10.1177/02783649241230562
       \endverb
     \endentry
-    \entry{sorokoletova2024enhancing}{misc}{}
-      \name{author}{2}{}{%
-        {{hash=2aa5d78cc00bff267dc2ced313daa257}{%
-           family={Sorokoletova},
-           familyi={S\bibinitperiod},
-           given={Olga\bibnamedelima E.},
-           giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
-        {{hash=92cb33df4d317b024fde85d000a29b9b}{%
-           family={Iocchi},
-           familyi={I\bibinitperiod},
-           given={Luca},
-           giveni={L\bibinitperiod}}}%
-      }
-      \strng{namehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
-      \strng{fullhash}{6c0ee21bd7decbfbb55450e9fd56c62f}
-      \strng{bibnamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
-      \strng{authorbibnamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
-      \strng{authornamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
-      \strng{authorfullhash}{6c0ee21bd7decbfbb55450e9fd56c62f}
-      \field{sortinit}{2}
-      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{eprintclass}{cs.RO}
-      \field{eprinttype}{arXiv}
-      \field{title}{Enhancing robot reliability for health-care facilities by means of Human-Aware Navigation Planning}
-      \field{year}{2024}
-      \verb{eprint}
-      \verb 2409.17131
-      \endverb
-    \endentry
     \entry{kouvaritakis2016model}{article}{}
       \name{author}{2}{}{%
         {{hash=cc72b15c91fef7534aa5376086a38baf}{%
@@ -138,8 +107,8 @@
       \strng{authorbibnamehash}{5d1f6e7ddac27396454e3c840ccf8934}
       \strng{authornamehash}{5d1f6e7ddac27396454e3c840ccf8934}
       \strng{authorfullhash}{5d1f6e7ddac27396454e3c840ccf8934}
-      \field{sortinit}{3}
-      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Switzerland: Springer International Publishing}
@@ -149,6 +118,37 @@
       \field{year}{2016}
       \field{pages}{7}
       \range{pages}{1}
+    \endentry
+    \entry{sorokoletova2024enhancing}{misc}{}
+      \name{author}{2}{}{%
+        {{hash=2aa5d78cc00bff267dc2ced313daa257}{%
+           family={Sorokoletova},
+           familyi={S\bibinitperiod},
+           given={Olga\bibnamedelima E.},
+           giveni={O\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=92cb33df4d317b024fde85d000a29b9b}{%
+           family={Iocchi},
+           familyi={I\bibinitperiod},
+           given={Luca},
+           giveni={L\bibinitperiod}}}%
+      }
+      \strng{namehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{fullhash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{bibnamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{authorbibnamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{authornamehash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \strng{authorfullhash}{6c0ee21bd7decbfbb55450e9fd56c62f}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.RO}
+      \field{eprinttype}{arXiv}
+      \field{title}{Enhancing robot reliability for health-care facilities by means of Human-Aware Navigation Planning}
+      \field{year}{2024}
+      \verb{eprint}
+      \verb 2409.17131
+      \endverb
     \endentry
     \entry{heirung2018stochastic}{article}{}
       \name{author}{4}{}{%

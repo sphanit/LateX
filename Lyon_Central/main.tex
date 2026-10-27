@@ -77,6 +77,7 @@
 
 \newcommand{\update}[1]{{\color{red} #1}}
 \usepackage{float}
+% \usepackage{caption}[size=footnotesize]
 
 \begin{document}
 
@@ -173,6 +174,7 @@ It involved using CAD tools like Solidworks to build and analyse the robot, quas
 \includegraphics[width=\textwidth]{iiith2.jpg}
 % \vspace{-15pt}
 \end{minipage}
+\vspace{-\intextsep}
 \begin{flushleft} 
 \footnotesize 
 \textit{Stair-climbing robot prototype and the 3D printed humanoid doing reachability task \ref{iros15}, \ref{robio}, \ref{humanoids18}.}
@@ -181,7 +183,7 @@ It involved using CAD tools like Solidworks to build and analyse the robot, quas
 \end{flushleft}
 \vspace{-\intextsep}
 \end{wrapfigure}
-assisted in the development of 3D printed humanoid robot~\ref{raha16} for building the required circuitry and system integration. In my master’s, I explored various aspects of humanoid whole-body motion planning and developed novel solutions to inverse kinematics. I proposed a reinforcement learning–based methodology for finding stable inverse kinematics configurations~\ref{robio}, which was later extended to dual-arm reachability tasks~\ref{isr18}. As part of this extension, I introduced a new reinforcement learning architecture, DiGrad~\ref{humanoids18}. Further, I completed a three-month exchange at IIT-Jodhpur under Prof. Suril Shah, where I mentored three bachelor’s students on project implementation. The project involved capturing human motion using a motion capture system and transferring these motions to a humanoid robot.
+assisted in the development of 3D printed humanoid robot~\ref{raha16} for building the required circuitry and system integration. In my master’s, I explored various aspects of humanoid whole-body motion planning and developed novel solutions to inverse kinematics. I proposed a reinforcement learning-based methodology for finding stable inverse kinematics configurations~\ref{robio}, which was later extended to dual-arm reachability tasks~\ref{isr18}. As part of this extension, I introduced a new reinforcement learning architecture, DiGrad~\ref{humanoids18}. Further, I completed a three-month exchange at IIT-Jodhpur under Prof. Suril Shah, where I mentored three bachelor’s students on project implementation. The project involved capturing human motion using a motion capture system and transferring these motions to a humanoid robot.
 
 \textbf{PhD (2019 - 2022):} 
 The main objective of my doctoral thesis was to develop human-aware robotic systems and provide open-source implementations. During my PhD at LAAS-CNRS, I extensively worked on a {human-aware robot navigation stack}~\ref{cohan1}, \ref{cohan2} in ROS and made the system publicly available on GitHub. 
@@ -195,6 +197,7 @@ Over time, I iteratively
 % \vspace{-\intextsep}
 % \vspace{-10pt}
 \end{minipage}
+\vspace{-\intextsep}
 \begin{flushleft} 
 \footnotesize 
 \textit{CoHAN running on Pepper robot (top) \ref{cohan1}, \ref{cohan2}. Invisible humans in simulation (bottom left)~\ref{cohan3} and InHuS~\ref{inhus3}, \ref{inhus1}.}
@@ -216,13 +219,14 @@ After my PhD, I worked as an engineer for two months before beginning my postdoc
 \vspace{-\intextsep}
 % \vspace{-10pt}
 \end{minipage}
+\vspace{-\intextsep}
 \begin{flushleft} 
 \footnotesize 
 \textit{Screenshot from the dataset of the user-study~\ref{hri26},~\ref{bi3dataset} .}
 \par
 \vspace{-\intextsep}
 \end{flushleft}
-% \vspace{-\intextsep}
+\vspace{-5pt}
 \end{wrapfigure}
 a set of novel evaluation metrics~\ref{new_metrics} I had proposed at the end of my thesis. These metrics provide a better way to quantify human-aware robot navigation under different circumstances, incorporating elements such as danger and human visibility. During my postdoc at LAAS, I engaged in several collaborations while developing a new version of my human-aware robot navigation stack. This updated system incorporated new technologies, such as behaviour trees, and was made more robust. In parallel, I worked on a survey with several researchers across Europe, which was later published as a journal article~\ref{ijrr24}. I initiated a collaboration with the University of Michigan, where we conducted a dual-site user study to investigate how different motion prediction mechanisms affect user perception~\ref{bi3dataset}, \ref{hri26}. Another collaboration was conducted with researchers from CNR - Institute of Cognitive Sciences and Technologies, Rome, where we proposed a combined task and motion planning framework~\ref{icsr24}, \ref{planrob} and tested it in a simulated hospital environment.
 
@@ -234,30 +238,33 @@ As part of the euROBIN project, I collaborated with the University of Bremen and
 % {\itshape (Including scientific context, obstacles, indicators, dissemination of results)\par}
 % \gap[30pt]
 \boldheading{{Context and Research Axes}}
-\setlength{\columnsep}{6pt}
-\begin{wrapfigure}{r}{0.4\textwidth}
+\setlength{\columnsep}{5pt}
+\begin{wrapfigure}{r}{0.38\textwidth}
 \centering
 \vspace{-\intextsep}
-\includegraphics[width=0.38\textwidth]{plan.jpg}
-{\footnotesize\textit{Fig.~1: Target scenarios: a service robot in a crowded restaurant (left), a humanoid assisting an elderly person at home (right).}\par}
+\includegraphics[width=0.4\textwidth]{plan_new.jpg}
+\begin{flushleft} 
+\vspace{-8pt}
+{\footnotesize\textit{Fig.~1: Target scenarios: a cobot collaborating with a worker on assembly (left), a mobile manipulator helping an elderly person (right).}\par}
+\end{flushleft}
 \vspace{-\intextsep}
 \end{wrapfigure}
 
-\noindent My long-term goal is to integrate robots into everyday life as co-workers and assistants (Fig.~1). This requires motion planning that remains robust to disturbances and failures not only in controlled settings but in uncontrolled, human-populated environments, where the robot must perceive and understand the situation, communicate, react appropriately, and know when to stop. Current human-aware navigation (HAN) planners fall into two camps~\cite{singamaneni2024survey}: learned planners (RL, imitation learning (IL)) capture complex behaviours but transfer poorly across robots and contexts, while model-based planners such as MPC transfer well but are context-blind and treat humans as obstacles with deterministic motion. My central hypothesis is that \textit{combining learned interaction and context models with stochastic model-based planning yields human-aware motion that is both adaptive and reliable}. Building on my open-source human-aware navigation stack CoHAN~\ref{cohan1}, \ref{cohan2}, already adopted by other groups~\cite{sorokoletova2024enhancing}, I will address two research axes:
+\noindent My long-term goal is to integrate robots into everyday life as co-workers and assistants (Fig.~1). This requires motion planning that remains robust to disturbances and failures not only in controlled settings but in uncontrolled, human-populated environments, where the robot must perceive and understand the situation, communicate, react appropriately, and know when to stop. \update{Current human-aware navigation (HAN) planners fall into two camps}~\cite{singamaneni2024survey}: learned planners capture complex behaviours but transfer poorly across robots and contexts, while model-based planners such as MPC transfer well but are context-blind and treat humans as obstacles with deterministic motion. My central hypothesis is that \textit{combining learned interaction and context models with stochastic model-based planning yields human-aware motion that is both adaptive and reliable}, a prerequisite for human-AI shared control. Building on my work in human-aware navigation, planning and HRI, I will address two research axes:
 
 \vspace{0.5ex}
-\noindent \textbf{\textit{Axis 1: Robust Human-Aware Motion Planning}}: How can a robot plan trajectories that remain safe, legible, and proactive under uncertainty in human motion, intention, and context, and transfer across platforms (wheeled robots, humanoids, quadrupeds)?
+\noindent \textbf{\textit{Axis 1: Robust Human-Aware Motion Planning}}: How can a robot plan trajectories that remain safe, legible, and proactive under uncertainty in human motion, intention, and context, and transfer across platforms (mobile robots, cobots and robotic arms, humanoids)?
 
 \vspace{0.5ex}
-\noindent \textbf{\textit{Axis 2: Situation Assessment and Decision-Making in HRI}}: How should a robot assess an interaction situation, predict how humans will react to its actions, and select appropriate actions (e.g., move, wait, speak, hand over an object)?
+\noindent \textbf{\textit{Axis 2: Situation Assessment and Decision-Making in HRI}}: How should a robot assess an interaction situation, predict how humans will react to its actions, and select appropriate actions (e.g., move, wait, speak, hand over an object), including whether to lead, follow, or yield control to the human?
 
 \vspace{0.5ex}
 \boldheading{{Methodology}}
 
-\noindent \textbf{{Robust and Adaptive Motion Planning (Axis 1)}}: RL and IL can learn controllers and behaviours that are hard to model mathematically, but usually need retraining on a new platform. Model Predictive Control (MPC)~\cite{kouvaritakis2016model} is flexible and transferable but requires precise modelling and tuning. My co-planning MPC framework~\ref{cohan1} already plans joint human-robot trajectories with \textit{social constraints}, but assumes deterministic human motion. I will extend it to stochastic MPC (S-MPC)~\cite{heirung2018stochastic, zhu2025fusion}, where \textit{chance constraints}~\cite{paulson2020stochastic} encode human-interaction uncertainty as soft constraints and \textit{robust constraints} enforce kinematic feasibility and obstacle avoidance. RL will be used to learn the behaviours and cost terms that are hard to hand-design~\cite{jia2025architectures}, leaving safety to the S-MPC layer. Vision-language-action models (VLAs)~\cite{kawaharazuka2025vision} can interpret scenes and language to propose candidate actions, but in my experience generative models alone do not produce reliable trajectories without strong feedback. I will therefore use VLA outputs as guidance for the S-MPC, which ensures safety, responsiveness, and adherence to interaction constraints. Finally, to adapt to context, a learned context model (Axis 2) will update the constraints and objective of the S-MPC online, so that the same planner exhibits different behaviours in, e.g., a hospital corridor or a crowded restaurant.
+\noindent \textbf{{Robust and Adaptive Motion Planning (Axis 1)}}: Reinforcement learning (RL) and Imitation learning (IL) can learn controllers and behaviours that are hard to model mathematically, but usually need retraining on a new platform. Model Predictive Control (MPC)~\cite{kouvaritakis2016model} is flexible and transferable but requires precise modelling and tuning. My open-source co-planning MPC framework CoHAN~\ref{cohan1}, \ref{cohan2}, already adopted by other groups~\cite{sorokoletova2024enhancing}, plans joint human-robot trajectories with \textit{social constraints}, but assumes deterministic human motion. I will extend it to stochastic MPC (S-MPC)~\cite{heirung2018stochastic, zhu2025fusion}, where \textit{chance constraints}~\cite{paulson2020stochastic} encode human-interaction uncertainty as soft constraints and \textit{robust constraints} enforce kinematic feasibility and obstacle avoidance. RL will be used to learn the behaviours and cost terms that are hard to hand-design~\cite{jia2025architectures}, leaving safety to the S-MPC layer. Vision-language-action models (VLAs)~\cite{kawaharazuka2025vision} can interpret scenes and language to propose candidate actions, but in my experience generative models alone do not produce reliable trajectories without strong feedback. I will therefore use VLA outputs as guidance for the S-MPC, which ensures safety, responsiveness, and adherence to interaction constraints. Finally, to adapt to context, a learned context model (Axis 2) will update the constraints and objective of the S-MPC online, so that the same planner exhibits different behaviours in, e.g., a hospital corridor or a shared assembly cell. The same formulation applies to manipulators sharing a workspace with humans (e.g., handovers, collaborative assembly or waste sorting), where the joint plan covers both the robot's and the human's arm motions.
 
 \vspace{0.5ex}
-\noindent \textbf{{Learning Interaction Models and Decision-Making (Axis 2)}}: Recent HRI datasets such as \href{https://github.com/RobotiXX/MuSoHu-data-collection}{MuSoHu}, \href{https://spalaboratory.github.io/SiT/}{SiT}, \href{https://www.cs.utexas.edu/~xiao/SCAND/SCAND.html}{SCAND}, \href{http://thor.oru.se/magni.html}{THÖR-Magni} and \href{https://jrdb.erc.monash.edu/dataset/social}{JRDB-Social}, including my own Bi$^3$ dataset~\ref{bi3dataset}, each cover few contexts and human densities, and carry collection biases (e.g., visible teleoperator vs autonomous robot). I will first address data harmonisation~\cite{loulaki2024addressing}: identifying common interaction features and combining datasets while accounting for their biases. On this data, I will learn a probabilistic action-reaction model that predicts how humans react (e.g., moving aside, waiting) to the robot's actions, using scene graphs~\cite{chang2021comprehensive} and graph neural networks (GNNs)~\cite{li2022dynamic} with attention~\cite{vaswani2017attention} to focus on relevant agents, and mixture density networks~\cite{errica2021graph} to output distributions that feed directly into the S-MPC chance constraints. For context recognition, I will fine-tune vision-language models (VLMs)~\cite{zhang2024vision} using LoRA~\cite{hu2022lora, luo2025towards} to classify the context and extract viable actions from the same scene graphs, and will move to dedicated architectures if this does not scale. In the mid-term, I will couple these predictions with decision-making under uncertainty (MDPs, POMDPs, RL)~\cite{rizk2018decision} and task planning~\cite{amiri2020learning}, extending my work on integrated task and motion planning~\ref{icsr24}, \ref{planrob} towards real-time, proactive decision-making for collaborative robots.
+\noindent \textbf{{Learning Interaction Models and Decision-Making (Axis 2)}}: Recent HRI datasets such as \href{https://github.com/RobotiXX/MuSoHu-data-collection}{MuSoHu}, \href{https://www.cs.utexas.edu/~xiao/SCAND/SCAND.html}{SCAND}, \href{http://thor.oru.se/magni.html}{THÖR-Magni} and \href{https://jrdb.erc.monash.edu/dataset/social}{JRDB-Social}, including my own Bi$^3$ dataset~\ref{bi3dataset}, each cover few contexts and human densities, and carry collection biases (e.g., visible teleoperator vs autonomous robot). I will first address data harmonisation~\cite{loulaki2024addressing}: identifying common interaction features and combining datasets while accounting for their biases. On this data, I will learn a probabilistic action-reaction model that predicts how humans react (e.g., moving aside, waiting) to the robot's actions, using scene graphs~\cite{chang2021comprehensive} and graph neural networks (GNNs)~\cite{li2022dynamic} with attention~\cite{vaswani2017attention} to focus on relevant agents, and mixture density networks~\cite{errica2021graph} to output distributions that feed directly into the S-MPC chance constraints. For context recognition, I will fine-tune vision-language models (VLMs)~\cite{zhang2024vision} using LoRA~\cite{hu2022lora, luo2025towards} to classify the context from multimodal cues (vision, speech, gaze, body pose) and extract viable actions from the same scene graphs, and will move to dedicated architectures if this does not scale. In the mid-term, I will couple these predictions with decision-making under uncertainty (MDPs, POMDPs, RL)~\cite{rizk2018decision} and task planning~\cite{amiri2020learning}, extending my work on integrated task and motion planning~\ref{icsr24}, \ref{planrob} towards real-time, proactive decision-making for collaborative robots. This decision layer realises human-AI shared control: from the inferred human intent and context, it decides whether the robot leads, follows or yields, and how much autonomy it takes.
 
 \vspace{0.5ex}
 \noindent \textbf{{HRI Studies and Evaluation (Axes 1 and 2)}}: Both axes rely on understanding interaction. I will study how robots should communicate intent: when non-verbal cues such as motion legibility~\cite{schmidt2024investigating} suffice, and when verbal communication or negotiation is needed. LLMs can generate engaging speech~\cite{song2025goat} and multimodal LLMs can generate gestures~\cite{soton506590}, but their outputs are inconsistent across similar situations, so I will study how to constrain them for consistency and legibility. A series of user studies (following EU ethics guidelines) will identify the key features of interaction, whether agents' long-term intentions are needed or local observations suffice, and which constraints are common across contexts versus context-specific; these directly define the S-MPC constraints. In later years, I will extend this to physical HRI for whole-body human-aware motion planning. In parallel, I will continue my community work on evaluating HAN~\ref{principles}, \ref{new_metrics} by developing metrics, protocols, and benchmarks, notably through the \href{https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/27131}{Dagstuhl Seminar} I co-organise.
@@ -269,7 +276,7 @@ As part of the euROBIN project, I collaborated with the University of Bremen and
 \begin{tabularx}{\linewidth}{|L{14mm}|Y|Y|}
 \hline \rowcolor{lbl}\bfseries Period & \bfseries Research objectives & \bfseries Indicators\\
 \hline Year 1-2 & Data harmonisation; probabilistic interaction model; S-MPC extension of CoHAN; first intent-communication user studies; context recognition with VLMs. & Harmonised benchmark released; open-source S-MPC planner; 1 PhD student recruited; ANR JCJC submitted; papers at HRI/ICRA/IROS/R-AL.\\
-\hline Years 3-4 & Context-adaptive HAN deployed on multiple platforms; RL/VLA guidance of S-MPC; multi-context user study; integration with task planning. & Cross-platform demos; multi-site user study; 2nd PhD student; ERC Starting Grant / Horizon proposal; journal articles (IJRR, T-RO, THRI).\\
+\hline Years 3-4 & Context-adaptive planning on mobile robots and cobots (shared-workspace collaboration); RL/VLA guidance of S-MPC; multi-context user study; integration with task planning. & Cross-platform demos; multi-site user study; 2nd PhD student; ERC Starting Grant / Horizon proposal; journal articles (IJRR, T-RO, THRI).\\
 \hline Year 5+ & Stochastic whole-body human-aware planning; physical HRI; collaborative decision-making. & Whole-body demonstrator; long-term deployment; established research line within the team.\\
 \hline
 \end{tabularx}\par}
@@ -277,13 +284,14 @@ As part of the euROBIN project, I collaborated with the University of Bremen and
 \vspace{1ex}
 \noindent \textbf{{Obstacles and Mitigation}}: (i) \textit{Heterogeneous or insufficient data}: if harmonised public datasets are insufficient, I will collect targeted data on the team's platforms, building on my experience with the Bi$^3$ dual-site study~\ref{bi3dataset}. (ii) \textit{Unreliable generative models}: VLA/VLM outputs are only used as guidance; the S-MPC layer always enforces safety, so the system degrades gracefully to a classical planner. (iii) \textit{Sim-to-real and cross-platform transfer}: the model-based S-MPC layer reduces transfer to model identification, and every component is validated on real robots early through my open-source stack. (iv) \textit{Ethics and recruitment for user studies}: studies will follow institutional ethics review, and I will use simulation tools for human agents~\ref{inhus1}, \ref{imhus1} for early iterations.
 
+\boldheading{{Integration in the Host Team}} This project fits the LIMELIGHT chair on \textit{Learning for Human-AI Shared Control} at LIRIS (UMR CNRS 5205). My co-planning approach, in which the robot plans jointly for itself and the human, is itself a form of human-AI shared control. In the IMAGINE team (main affiliation), it will provide the planning and control layer that links the team's expertise in learning, vision and multimodal perception (embodied AI, VLA) to safe, adaptive execution on real robots. With the SICAL team (secondary affiliation), I will collaborate on user studies, evaluation of interaction and intent communication, and interfaces for shared control. Axis~1 extends naturally from mobile robots to human-robot collaboration with manipulators, which I will validate on the LIRIS Robotics platform (cobots, robotic arms, industrial robots) in the chair's target applications, from assistive robots in healthcare to industrial assembly and waste sorting. The chair's ANR package (\texteuro 200k) will fund a first PhD student and experiments, and will seed ANR JCJC and ERC proposals. I will also bring my existing collaborations (LAAS-CNRS, INRIA, University of Michigan, euROBIN) to LIRIS.
+
 \boldheading{{Dissemination and Impact}}
 \vspace{0.5ex}
 % \noindent \textbf{{Dissemination and Impact}}: 
-Results will be published at the main robotics and HRI venues (HRI, ICRA, IROS, RO-MAN) and journals (IJRR, T-RO, RA-L, THRI), and all software, models and harmonised datasets will be released open source, continuing the CoHAN tradition. I will disseminate to the broader community through workshops, the Dagstuhl seminar, and outreach events. Applications include delivery, warehouse and service robots in airports, hospitals and elderly-care homes, as well as collaborative industrial robots and exoskeletons, where safe, coordinated motion is critical. The project aligns with the \href{https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf}{EU Horizon 2026--2027 programme} and the \href{https://eu-robotics.net/wp-content/uploads/euRobotics-A-Unified-Vision-for-European-Robotics-Dec2024-web.pdf}{Unified Vision for European Robotics}, which identify human-centred, socially aware autonomy as a key priority, a view echoed by the \href{https://hichristensen.com/pdf/roadmap-2024.pdf}{U.S. Robotics Roadmap} and recent \href{https://www.jst.go.jp/crds/en/publications/CRDS-FY2025-SP-01.html}{Japanese strategic reports}.
+Results will be published at the main robotics and HRI venues (HRI, ICRA, IROS, RO-MAN) and journals (IJRR, T-RO, RA-L, THRI), and all software, models and harmonised datasets will be released open source, continuing the CoHAN tradition. I will disseminate to the broader community through workshops, the Dagstuhl seminar, and outreach events. Target applications build on my experience: assistive and service robots in healthcare and elderly care, where CoHAN is already used~\cite{sorokoletova2024enhancing}, and in public spaces~\ref{mummer}, and collaborative industrial robots (assembly, waste sorting). The same methods could potentially extend to autonomous vehicles~\ref{iv19} and to intelligent interfaces that communicate the robot's intent and let humans adjust its autonomy. The project aligns with the \href{https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/horizon/wp-call/2026-2027/wp-7-digital-industry-and-space_horizon-2026-2027_en.pdf}{EU Horizon 2026--2027 programme} and the \href{https://eu-robotics.net/wp-content/uploads/euRobotics-A-Unified-Vision-for-European-Robotics-Dec2024-web.pdf}{Unified Vision for European Robotics}, which identify human-centred, socially aware autonomy as a key priority, a view echoed by the \href{https://hichristensen.com/pdf/roadmap-2024.pdf}{U.S. Robotics Roadmap} and recent \href{https://www.jst.go.jp/crds/en/publications/CRDS-FY2025-SP-01.html}{Japanese strategic reports}.
 
-\boldheading{{Integration in the Host Team}} \update{[To be completed: host team, its members and expertise, how the project complements it, available robotic platforms and collaborations within the institution.]}
-
+% \newpage
 \boldheading{References}
 {
 \printbibliography[heading=none]
@@ -356,8 +364,6 @@ At the level of Bachelors, I can teach digital logic, processor architectures, e
 At the masters level, I will be focusing more on advanced topics like optimal motion planning and control, imitation and reinforcement learning, human-robot interaction, and evolving technologies for social robotics, AI and autonomous vehicles. I plan to make these courses more engaging by combining the teaching with in-class discussions on the current research papers. As social robotics is more practical, most courses will have projects as a part of course or the entire course could be a project on developing some methodologies. For the discussion sessions, students will be grouped and given papers that they need to read and understand before coming to the class. This works at the masters level as students are more autonomous.
 
 My overall teaching activities aim to look at the real-world problems on social robotics and automation with focus on hands-on experience needed to build expert skills, critical thinking and deeper understanding of the concepts. I am flexible, adaptable, and always approachable when students need extra support or clarification in class.
-
-\gap[20pt]
 
 \hone{4.}{Exhaustive list of contracts and funding obtained in research activities (if applicable)}
 % {\fontsize{10}{12}\selectfont\renewcommand{\arraystretch}{1.15}

@@ -324,9 +324,9 @@ INPUT ./phd.jpg
 INPUT ./cv_frame.jpg
 INPUT ./cv_frame.jpg
 INPUT ./cv_frame.jpg
-INPUT ./plan.jpg
-INPUT ./plan.jpg
-INPUT ./plan.jpg
+INPUT ./plan_new.jpg
+INPUT ./plan_new.jpg
+INPUT ./plan_new.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmsy9.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmr9.tfm

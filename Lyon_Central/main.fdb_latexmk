@@ -1,10 +1,11 @@
 # Fdb version 3
-["biber main"] 1793050603 "main.bcf" "main.bbl" "main" 1793050685
-  "main.bcf" 1793050684 108818 def4ace7173f08cec37c4eb3daa7649d "lualatex"
+["biber main"] 1793143344 "main.bcf" "main.bbl" "main" 1793144307
+  "main.bcf" 1793144307 108886 3fdf70b41e76e1784e5e3981d23ea68a "lualatex"
+  "refs.bib" 1793050599 40814 204f9e8dcce887559f180473958259c8 ""
   (generated)
   "main.bbl"
   "main.blg"
-["lualatex"] 1793050681 "/home/phani/Seafile/Applications/Latex/Lyon_Central/main.tex" "main.pdf" "main" 1793050685
+["lualatex"] 1793144304 "/home/phani/Seafile/Applications/Latex/Lyon_Central/main.tex" "main.pdf" "main" 1793144307
   "/home/phani/.local/share/fonts/calibri/CALIBRI.TTF" 1792953466 811052 a78cfad3beb089a6ce86d4e280fa270b ""
   "/home/phani/.local/share/fonts/calibri/CALIBRIB.TTF" 1792953466 848720 c8980f67879f6f08737d47c2ecb1cc43 ""
   "/home/phani/.local/share/fonts/calibri/CALIBRII.TTF" 1792953466 853348 3e14931180b08416dd7c967a7163f8ea ""
@@ -18,7 +19,7 @@
   "/home/phani/.texlive2021/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc" 1792953307 123142 a5bb91f587c7a560590d95e654431ffa ""
   "/home/phani/.texlive2021/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc" 1792991051 3161 7a8fd69e69559c2fc180b9d90b861db0 ""
   "/home/phani/.texlive2021/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1792953687 1549769 52a163240f07341b76f009c097c6257a ""
-  "/home/phani/Seafile/Applications/Latex/Lyon_Central/main.tex" 1793050634 53083 06224c3a1560d940bcbfc770ae56b1de ""
+  "/home/phani/Seafile/Applications/Latex/Lyon_Central/main.tex" 1793144301 55060 c5f04676e5de02c4507f165953ef575b ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1136768653 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1136768653 1528 abec98dbc43e172678c11b3b9031252a ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm" 1136768653 1508 3b32edd0d68f6498a5a375e78f9edc5e ""
@@ -173,13 +174,13 @@
   "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1792952880 4555450 66082557eece07ace81b602d6bf5232a ""
   "cv_frame.jpg" 1792948424 208748 13ad36e77506e562d5f961893b638f0e ""
   "iiith2.jpg" 1792948424 631561 b856ca61248b2932228ac83cff91aaf5 ""
-  "main.aux" 1793050684 5566 e191b7df52a1cfbc509cecc69de49d7a "lualatex"
-  "main.bbl" 1793050604 40240 5bef7d54df61160d98e06a9e0ccf5c2e "biber main"
-  "main.out" 1793050683 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "main.run.xml" 1793050684 2375 97321db83631f97c5e3ae42654fbb31b "lualatex"
-  "main.tex" 1793050634 53083 06224c3a1560d940bcbfc770ae56b1de ""
+  "main.aux" 1793144307 5657 7e62aa439742363c2a844f70be853dca "lualatex"
+  "main.bbl" 1793143345 40240 d90339b4ff2f2e511c2b825b80b3a308 "biber main"
+  "main.out" 1793144306 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "main.run.xml" 1793144307 2375 97321db83631f97c5e3ae42654fbb31b "lualatex"
+  "main.tex" 1793144301 55060 c5f04676e5de02c4507f165953ef575b ""
   "phd.jpg" 1792948422 758791 43420d2d62d4add261cd0719ef4e147e ""
-  "plan.jpg" 1792948422 103665 512f24a0fa4e57c43cb67354be8aa365 ""
+  "plan_new.jpg" 1793105661 353185 5cfbf48ed1c681048551d8cf9d261e8c ""
   (generated)
   "main.aux"
   "main.bcf"
